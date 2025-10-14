@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thư viện REST Demo (Cacheable)</title>
+</head>
+<body>
+    <h1>Thư viện Demo (Cacheable REST)</h1>
+
+    <button onclick="loadBooks()">Xem danh sách (có cache)</button>
+    <button onclick="loadBooks(true)">Tải lại từ server</button>
+    <button onclick="clearCache()">Xóa cache</button>
+    <span id="cache-status"></span>
+
+    <ul id="book-list"></ul>
+
+    <h3>Mượn / Trả sách</h3>
+    <input id="bookId" type="number" placeholder="Nhập ID sách">
+    <button onclick="borrowBook()">Mượn</button>
+    <button onclick="returnBook()">Trả</button>
+
+    <p id="result"></p>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

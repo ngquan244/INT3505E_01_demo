@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thư viện REST Demo</title>
+</head>
+<body>
+    <h1>Thư viện Demo (Stateless REST)</h1>
+    <button onclick="loadBooks()">Xem danh sách sách</button>
+    <ul id="book-list"></ul>
+
+    <h3>Mượn / Trả sách</h3>
+    <input id="bookId" type="number" placeholder="Nhập ID sách">
+    <button onclick="borrowBook()">Mượn</button>
+    <button onclick="returnBook()">Trả</button>
+
+    <p id="result"></p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
