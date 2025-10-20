@@ -1,0 +1,118 @@
+openapi: 3.0.3
+info:
+  title: Library REST Demo API
+  version: 1.0.0
+  description: >
+    API quản lý sách minh họa mô hình **Stateless REST**.  
+    Mọi request thay đổi dữ liệu đều **yêu cầu gửi token** trong body JSON hoặc header Authorization.  
+    Token hợp lệ: `"demo_token_123"`.
+
+servers:
+  - url: http://localhost:5000
+
+components:
+  securitySchemes:
+    TokenAuth:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: |
+        Token xác thực người dùng.  
+        Ví dụ: `Authorization: Bearer demo_token_123`
+
+  schemas:
+    Book:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        title:
+          type: string
+          example: Lập trình Python
+        available:
+          type: boolean
+          example: true
+
+paths:
+  /api/books:
+    get:
+      summary: Lấy danh sách tất cả sách
+      description: Trả về danh sách tất cả sách cùng trạng thái có sẵn hay không.
+      responses:
+        "200":
+          description: Danh sách sách
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Book'
+
+  /api/borrow:
+    post:
+      summary: Mượn sách
+      description: >
+        Yêu cầu **stateless** — phải gửi token hợp lệ mỗi lần.  
+        Nếu sách đã được mượn thì trả về lỗi.
+      security:
+        - TokenAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [token, book_id]
+              properties:
+                token:
+                  type: string
+                  example: demo_token_123
+                book_id:
+                  type: integer
+                  example: 2
+      responses:
+        "200":
+          description: Mượn sách thành công
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Đã mượn 'Trí tuệ nhân tạo cơ bản'"
+        "400":
+          description: Sách đã được mượn
+        "401":
+          description: Token không hợp lệ
+
+  /api/return:
+    post:
+      summary: Trả sách
+      description: >
+        Yêu cầu **stateless** — phải gửi token hợp lệ mỗi lần.  
+        Nếu ID không tồn tại, trả về lỗi 404.
+      security:
+        - TokenAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [token, book_id]
+              properties:
+                token:
+                  type: string
+                  example: demo_token_123
+                book_id:
+                  type: integer
+                  example: 2
+      responses:
+        "200":
+          description: Trả sách thành công
+        "401":
+          description: Token không hợp lệ
+        "404":
+          description: Không tìm thấy sách
