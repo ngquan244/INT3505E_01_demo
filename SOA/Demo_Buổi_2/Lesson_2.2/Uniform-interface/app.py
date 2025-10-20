@@ -11,14 +11,13 @@ BOOKS = [
 ]
 
 
-# API: LẤY DANH SÁCH SÁCH (Cacheable)
+# API: LẤY DANH SÁCH SÁCH
 @app.route("/api/books", methods=["GET"])
 def get_books():
     resp = make_response(jsonify(BOOKS))
-    resp.headers["Cache-Control"] = "no-store"  # Không cache
+    resp.headers["Cache-Control"] = "no-store" 
     resp.headers["X-Server-Time"] = time.strftime("%H:%M:%S")
     return resp
-
 
 
 # API: MƯỢN SÁCH (Stateless: mỗi request phải gửi token)

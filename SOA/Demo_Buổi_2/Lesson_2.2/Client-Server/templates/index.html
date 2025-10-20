@@ -2,20 +2,23 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Thư viện REST Demo</title>
+    <title>Thư viện Extensible Demo</title>
 </head>
 <body>
-    <h1>Thư viện Demo (Stateless REST)</h1>
-    <button onclick="loadBooks()">Xem danh sách sách</button>
+    <h1>Thư viện Extensible Demo</h1>
+
+    <h3>Sách</h3>
+    <button id="btn-load-books">Xem danh sách sách</button>
     <ul id="book-list"></ul>
-
-    <h3>Mượn / Trả sách</h3>
     <input id="bookId" type="number" placeholder="Nhập ID sách">
-    <button onclick="borrowBook()">Mượn</button>
-    <button onclick="returnBook()">Trả</button>
-
+    <button id="btn-borrow">Mượn</button>
+    <button id="btn-return">Trả</button>
     <p id="result"></p>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <h3>Tác giả</h3>
+    <button id="btn-load-authors">Xem danh sách tác giả</button>
+    <ul id="author-list"></ul>
+
+    <script type="module" src="{{ url_for('static', filename='main.js') }}"></script>
 </body>
 </html>
