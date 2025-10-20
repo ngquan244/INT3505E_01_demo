@@ -13,6 +13,7 @@ init_db(app)
 def index():
     return render_template('index.html')
 
+# lấy list sách
 @app.route('/api/books')
 def get_books():
     q = request.args.get('q', type=str)
@@ -54,6 +55,7 @@ def get_books():
         'items': data
     })
 
+# mượn sách
 @app.route('/api/borrow', methods=['POST'])
 def borrow_book():
     body = request.get_json() or {}
@@ -73,6 +75,7 @@ def borrow_book():
     db.session.commit()
     return jsonify({'message': f'Đã mượn "{book.title}"', 'borrow_id': borrow.id})
 
+# trả sách
 @app.route('/api/return', methods=['POST'])
 def return_book():
     body = request.get_json() or {}

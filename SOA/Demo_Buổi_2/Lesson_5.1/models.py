@@ -41,7 +41,7 @@ def init_db(app):
     with app.app_context():
         db.create_all()
 
-        # --- Seed sample data nếu DB trống ---
+        # Seed sample data nếu DB trống 
         if not Author.query.first():
             # Tác giả
             a1 = Author(name="Nguyễn Nhật Ánh")
@@ -75,18 +75,10 @@ def init_db(app):
                 Book(title="Nguồn cội", isbn="EN009", published_year=2017, author=a3, category=c3),
                 Book(title="Pháo đài số", isbn="EN010", published_year=1998, author=a3, category=c3),
 
-                Book(title="Rừng Na Uy", isbn="JP001", published_year=1987, author=a4, category=c4),
-                Book(title="Kafka bên bờ biển", isbn="JP002", published_year=2002, author=a4, category=c4),
-                Book(title="Biên niên ký chim vặn dây cót", isbn="JP003", published_year=1994, author=a4, category=c4),
-                Book(title="Người tình Sputnik", isbn="JP004", published_year=1999, author=a4, category=c4),
-                Book(title="1Q84", isbn="JP005", published_year=2009, author=a4, category=c4),
             ]
 
             db.session.add_all([a1, a2, a3, a4, c1, c2, c3, c4] + books)
             db.session.commit()
-            # with app.app_context():
-            #     db.drop_all()
-            #     db.create_all()
-    # gọi lại logic seed ở đây
+
 
             
