@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify, render_template
 from flask_swagger_ui import get_swaggerui_blueprint
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 SWAGGER_URL = "/swagger"
 API_URL = "/static/openapi.yaml"
