@@ -1,0 +1,16 @@
+{
+  "name": "auth-service",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.x",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.x",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite3": "^5.x"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
