@@ -1,0 +1,131 @@
+  openapi: 3.0.3
+  info:
+    description: Simple CRUD API for managing products
+    title: Product API
+    version: 1.0.0
+  servers:
+  - url: http://localhost:3000/api/v1
+  paths:
+    /products:
+      get:
+        operationId: getProducts
+        responses:
+          "200":
+            content:
+              application/json:
+                schema:
+                  items:
+                    $ref: "#/components/schemas/Product"
+                  type: array
+            description: List all products
+        summary: Get all products
+        x-eov-operation-handler: controllers/DefaultController
+      post:
+        operationId: createProduct
+        requestBody:
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProductInput"
+          required: true
+        responses:
+          "201":
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/Product"
+            description: Product created
+        summary: Create a new product
+        x-eov-operation-handler: controllers/DefaultController
+    /products/{id}:
+      delete:
+        operationId: deleteProduct
+        parameters:
+        - explode: false
+          in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          style: simple
+        responses:
+          "204":
+            description: Deleted successfully
+        summary: Delete a product
+        x-eov-operation-handler: controllers/DefaultController
+      get:
+        operationId: getProductById
+        parameters:
+        - explode: false
+          in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          style: simple
+        responses:
+          "200":
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/Product"
+            description: Product detail
+        summary: Get a product by ID
+        x-eov-operation-handler: controllers/DefaultController
+      put:
+        operationId: updateProduct
+        parameters:
+        - explode: false
+          in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          style: simple
+        requestBody:
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProductInput"
+          required: true
+        responses:
+          "200":
+            description: Updated successfully
+        summary: Update a product
+        x-eov-operation-handler: controllers/DefaultController
+  components:
+    schemas:
+      Product:
+        example:
+          price: 0.8008281904610115
+          name: name
+          inStock: true
+          id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+        properties:
+          id:
+            format: uuid
+            type: string
+          name:
+            type: string
+          price:
+            type: number
+          inStock:
+            type: boolean
+        type: object
+      ProductInput:
+        example:
+          price: 0.8008281904610115
+          name: name
+          inStock: true
+        properties:
+          name:
+            type: string
+          price:
+            type: number
+          inStock:
+            type: boolean
+        required:
+        - inStock
+        - name
+        - price
+        type: object
