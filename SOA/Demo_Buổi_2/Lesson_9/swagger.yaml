@@ -1,0 +1,68 @@
+openapi: 3.0.3
+info:
+  title: Payment API
+  version: "2.0.0"
+  description: Demo Payment API với Versioning và Deprecation
+servers:
+  - url: http://localhost:3000
+paths:
+  /api/v1/payments:
+    post:
+      summary: "Thanh toán (v1) - Deprecated"
+      description: "Deprecated. Sử dụng v2 để thanh toán. Truyền card raw."
+      deprecated: true
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [amount, currency, card_number, cvv]
+              properties:
+                amount:
+                  type: number
+                  example: 50000
+                currency:
+                  type: string
+                  example: VND
+                card_number:
+                  type: string
+                  example: 4111111111111111
+                cvv:
+                  type: string
+                  example: 123
+      responses:
+        '200':
+          description: Payment created (deprecated)
+
+  /api/v2/payments:
+    post:
+      summary: "Thanh toán (v2) - Phiên bản mới"
+      description: "Sử dụng token hóa và Idempotency-Key header"
+      parameters:
+        - in: header
+          name: Idempotency-Key
+          required: true
+          schema:
+            type: string
+          description: "Idempotency key để đảm bảo request idempotent"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [amount, currency, payment_method_id]
+              properties:
+                amount:
+                  type: number
+                  example: 50000
+                currency:
+                  type: string
+                  example: VND
+                payment_method_id:
+                  type: string
+                  example: pm_123
+      responses:
+        '200':
+          description: Payment created
