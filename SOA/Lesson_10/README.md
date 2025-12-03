@@ -18,7 +18,7 @@
   - POST `/products`: 10 req/min
   - PUT `/products/{id}`: 20 req/min
   - DELETE `/products/{id}`: 5 req/min
-  - TEST `/test/rate-limit`: 2 req/min
+  - TEST `/test/rate-limit`: 5 req/min
 - **Circuit Breaker**: Tự động ngắt kết nối khi external service fail
 - **Graceful Degradation**: API vẫn hoạt động khi external service down
 
