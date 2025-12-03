@@ -181,11 +181,11 @@ app = FastAPI(
     """,
     version="1.0.0",
     contact={
-        "name": "SOA Practice",
-        "email": "22028171@vnu.edu.vn",
+        "name": "22028171@vnu.edu.vn",
+        "email": "22028171@vnu.edu.vn"
     },
     license_info={
-        "name": "MIT",
+        "name": "License MIT",
         "url": "https://opensource.org/licenses/MIT",
     },
     openapi_tags=[
@@ -264,7 +264,7 @@ async def root():
     return {
         "message": "Production API Demo",
         "version": "1.0.0", 
-        "docs": "/docs",
+        "docs-swagger": "/docs",
         "health": "/health",
         "metrics": "/metrics",
         "features": [
@@ -633,7 +633,7 @@ async def reset_circuit_breaker(request: Request):
     "/test/rate-limit",
     response_model=RateLimitTest,
     summary="Test rate limiting",
-    description="Test the rate limiting functionality. Very low limit (2 requests per minute) for easy testing.",
+    description="Test the rate limiting functionality. Very low limit (5 requests per minute) for easy testing.",
     tags=["testing"],
     responses={
         200: {
@@ -646,9 +646,9 @@ async def reset_circuit_breaker(request: Request):
         }
     }
 )
-@limiter.limit("2/minute")  # Very low limit for testing
+@limiter.limit("5/minute")  
 async def test_rate_limit(request: Request):
-    """Test rate limiting (chỉ 2 requests per minute)"""
+    """Test rate limiting (chỉ 5 requests per minute)"""
     logger.info("Rate limit test endpoint called")
     return RateLimitTest(
         message="Rate limit test successful",

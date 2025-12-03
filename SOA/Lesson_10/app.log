@@ -1951,3 +1951,60 @@ To install, run: pip install email-validator
 2025-12-03 18:34:42,758 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
 2025-12-03 18:34:42,758 - app - WARNING - Circuit breaker is open during test
 2025-12-03 18:34:42,759 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:53:18,976 - __main__ - INFO - Starting Production API Demo
+2025-12-03 18:53:56,479 - __main__ - INFO - Starting Production API Demo
+2025-12-03 18:54:15,692 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:54:15,693 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 18:54:15,871 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:54:15,915 - app - INFO - Response: GET /openapi.json -> 200 (0.044s)
+2025-12-03 18:54:34,209 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:54:34,211 - app - INFO - Response: GET /docs -> 200 (0.002s)
+2025-12-03 18:54:34,272 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:54:34,316 - fastapi - WARNING - email-validator not installed, email fields will be treated as str.
+To install, run: pip install email-validator
+2025-12-03 18:54:34,324 - app - INFO - Response: GET /openapi.json -> 200 (0.052s)
+2025-12-03 18:54:43,408 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:54:43,410 - app - INFO - Response: GET /docs -> 200 (0.002s)
+2025-12-03 18:54:43,475 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:54:43,520 - fastapi - WARNING - email-validator not installed, email fields will be treated as str.
+To install, run: pip install email-validator
+2025-12-03 18:54:43,528 - app - INFO - Response: GET /openapi.json -> 200 (0.053s)
+2025-12-03 18:55:29,714 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:55:29,716 - app - INFO - Response: GET /docs -> 200 (0.002s)
+2025-12-03 18:55:29,800 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:55:29,837 - fastapi - WARNING - email-validator not installed, email fields will be treated as str.
+To install, run: pip install email-validator
+2025-12-03 18:55:29,844 - app - INFO - Response: GET /openapi.json -> 200 (0.043s)
+2025-12-03 18:55:36,752 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 18:55:36,753 - app - INFO - Response: GET / -> 200 (0.001s)
+2025-12-03 18:56:11,166 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 18:56:11,169 - app - INFO - Response: GET / -> 200 (0.002s)
+2025-12-03 18:56:15,731 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:56:15,732 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 18:56:15,813 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:56:15,849 - fastapi - WARNING - email-validator not installed, email fields will be treated as str.
+To install, run: pip install email-validator
+2025-12-03 18:56:15,856 - app - INFO - Response: GET /openapi.json -> 200 (0.043s)
+2025-12-03 18:56:16,074 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:56:16,075 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 18:56:16,231 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:56:16,232 - app - INFO - Response: GET /openapi.json -> 200 (0.001s)
+2025-12-03 18:56:21,688 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 18:56:21,690 - app - INFO - Rate limit test endpoint called
+2025-12-03 18:56:21,691 - app - INFO - Response: GET /test/rate-limit -> 200 (0.003s)
+2025-12-03 18:56:23,396 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 18:56:23,397 - app - INFO - Rate limit test endpoint called
+2025-12-03 18:56:23,398 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 18:56:23,763 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 18:56:23,764 - app - INFO - Rate limit test endpoint called
+2025-12-03 18:56:23,765 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 18:56:23,991 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 18:56:23,992 - app - INFO - Rate limit test endpoint called
+2025-12-03 18:56:23,993 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 18:56:24,401 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 18:56:24,402 - app - INFO - Rate limit test endpoint called
+2025-12-03 18:56:24,402 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 18:56:24,786 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 18:56:24,787 - slowapi - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 18:56:24,789 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:56:24,789 - app - INFO - Response: GET /test/rate-limit -> 429 (0.003s)
