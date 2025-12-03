@@ -1,0 +1,1953 @@
+2025-12-03 17:22:14,831 - __main__ - INFO - Starting Production API Demo
+2025-12-03 17:35:01,337 - __main__ - INFO - Starting Production API Demo
+2025-12-03 17:39:59,390 - __main__ - INFO - Starting Production API Demo
+2025-12-03 17:40:06,805 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:40:06,806 - app - INFO - Health check performed
+2025-12-03 17:40:06,807 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:40:08,837 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 17:40:08,838 - app - INFO - Response: GET / -> 200 (0.001s)
+2025-12-03 17:40:10,884 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:40:10,884 - app - INFO - Health check performed
+2025-12-03 17:40:10,885 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:40:12,935 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:40:12,936 - app - INFO - Getting all products
+2025-12-03 17:40:12,936 - app - INFO - Response: GET /products -> 200 (0.001s)
+2025-12-03 17:40:14,982 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:40:14,983 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:40:14,983 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:40:18,036 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:40:18,037 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:40:18,037 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:40:21,091 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:40:21,092 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:40:21,092 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:40:21,093 - app - ERROR - Unhandled exception: 'HTTPException' object is not callable
+2025-12-03 17:40:24,117 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:40:24,118 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:40:24,118 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:40:24,119 - app - ERROR - Unhandled exception: 'HTTPException' object is not callable
+2025-12-03 17:40:27,150 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:40:27,151 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:40:27,151 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:40:27,152 - app - ERROR - Unhandled exception: 'HTTPException' object is not callable
+2025-12-03 17:40:30,182 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:40:30,182 - app - INFO - Testing circuit breaker
+2025-12-03 17:40:30,442 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:40:30,642 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:40:30,644 - app - ERROR - External API call failed: Client error '404 Not Found' for url 'https://jsonplaceholder.typicode.com/posts/999'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-12-03 17:40:30,645 - app - ERROR - Circuit breaker test failed: 'str' object has no attribute 'name'
+2025-12-03 17:40:30,645 - app - ERROR - Unhandled exception: 'str' object has no attribute 'name'
+2025-12-03 17:41:00,451 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 17:41:00,452 - app - INFO - Response: GET / -> 200 (0.001s)
+2025-12-03 17:41:13,054 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 17:41:13,055 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 17:41:20,923 - app - INFO - Request: GET /metrics from 127.0.0.1
+2025-12-03 17:41:20,924 - app - INFO - Metrics requested
+2025-12-03 17:41:20,926 - app - INFO - Response: GET /metrics -> 200 (0.004s)
+2025-12-03 17:41:32,201 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 17:41:32,202 - app - INFO - Response: GET / -> 200 (0.001s)
+2025-12-03 17:41:36,849 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:36,850 - app - INFO - Health check performed
+2025-12-03 17:41:36,851 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:41:40,064 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:40,065 - app - INFO - Health check performed
+2025-12-03 17:41:40,066 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:41:40,855 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:40,856 - app - INFO - Health check performed
+2025-12-03 17:41:40,857 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:41:41,779 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:41,780 - app - INFO - Health check performed
+2025-12-03 17:41:41,781 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:41:42,513 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:42,514 - app - INFO - Health check performed
+2025-12-03 17:41:42,514 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:41:43,239 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:43,240 - app - INFO - Health check performed
+2025-12-03 17:41:43,240 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:41:45,312 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:45,313 - app - INFO - Health check performed
+2025-12-03 17:41:45,314 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:41:46,021 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:46,022 - app - INFO - Health check performed
+2025-12-03 17:41:46,023 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:41:48,581 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:48,581 - app - INFO - Health check performed
+2025-12-03 17:41:48,582 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:41:49,108 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:49,109 - app - INFO - Health check performed
+2025-12-03 17:41:49,109 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:41:51,725 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:51,726 - app - INFO - Health check performed
+2025-12-03 17:41:51,726 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:41:52,400 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:52,401 - app - INFO - Health check performed
+2025-12-03 17:41:52,402 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:41:52,893 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:52,893 - app - INFO - Health check performed
+2025-12-03 17:41:52,894 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:41:53,364 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:53,365 - app - INFO - Health check performed
+2025-12-03 17:41:53,365 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:41:53,920 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:53,921 - app - INFO - Health check performed
+2025-12-03 17:41:53,921 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:41:54,434 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:54,434 - app - INFO - Health check performed
+2025-12-03 17:41:54,435 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:41:54,995 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:54,996 - app - INFO - Health check performed
+2025-12-03 17:41:54,997 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:41:55,487 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:55,488 - app - INFO - Health check performed
+2025-12-03 17:41:55,489 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:41:57,834 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:57,835 - app - INFO - Health check performed
+2025-12-03 17:41:57,836 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:41:58,943 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:41:58,944 - app - INFO - Health check performed
+2025-12-03 17:41:58,945 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:42:30,049 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 17:42:30,050 - app - INFO - Response: GET /docs -> 200 (0.002s)
+2025-12-03 17:42:30,566 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 17:42:30,597 - fastapi - WARNING - email-validator not installed, email fields will be treated as str.
+To install, run: pip install email-validator
+2025-12-03 17:42:30,606 - app - INFO - Response: GET /openapi.json -> 200 (0.039s)
+2025-12-03 17:42:36,565 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:42:36,566 - app - INFO - Getting all products
+2025-12-03 17:42:36,567 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:42:45,670 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 17:42:45,672 - app - INFO - Creating product: New Product2
+2025-12-03 17:42:45,673 - app - INFO - Product created with ID 4
+2025-12-03 17:42:45,674 - app - INFO - Response: POST /products -> 201 (0.004s)
+2025-12-03 17:42:58,901 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 17:42:58,903 - app - INFO - Creating product: New Product2
+2025-12-03 17:42:58,904 - app - INFO - Product created with ID 5
+2025-12-03 17:42:58,904 - app - INFO - Response: POST /products -> 201 (0.003s)
+2025-12-03 17:43:03,899 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:43:03,900 - app - INFO - Getting all products
+2025-12-03 17:43:03,900 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:43:20,158 - app - INFO - Request: GET /products/1 from 127.0.0.1
+2025-12-03 17:43:20,159 - app - INFO - Getting product 1
+2025-12-03 17:43:20,713 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/1
+2025-12-03 17:43:20,917 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/1 "HTTP/1.1 200 OK"
+2025-12-03 17:43:20,920 - app - INFO - Product 1 enriched with external data
+2025-12-03 17:43:20,921 - app - INFO - Response: GET /products/1 -> 200 (0.763s)
+2025-12-03 17:43:33,530 - app - INFO - Request: PUT /products/1 from 127.0.0.1
+2025-12-03 17:43:33,533 - app - INFO - Updating product 1
+2025-12-03 17:43:33,533 - app - INFO - Product 1 updated
+2025-12-03 17:43:33,534 - app - INFO - Response: PUT /products/1 -> 200 (0.004s)
+2025-12-03 17:43:42,969 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 17:43:42,970 - app - INFO - Response: GET / -> 200 (0.001s)
+2025-12-03 17:43:50,936 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:43:50,937 - app - INFO - Health check performed
+2025-12-03 17:43:50,938 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:44:00,413 - app - INFO - Request: GET /metrics from 127.0.0.1
+2025-12-03 17:44:00,414 - app - INFO - Metrics requested
+2025-12-03 17:44:00,418 - app - INFO - Response: GET /metrics -> 200 (0.004s)
+2025-12-03 17:44:15,024 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:44:15,026 - app - INFO - Testing circuit breaker
+2025-12-03 17:44:15,594 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:44:15,782 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:44:15,786 - app - ERROR - External API call failed: Client error '404 Not Found' for url 'https://jsonplaceholder.typicode.com/posts/999'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-12-03 17:44:15,787 - app - ERROR - Circuit breaker test failed: 'str' object has no attribute 'name'
+2025-12-03 17:44:15,789 - app - ERROR - Unhandled exception: 'str' object has no attribute 'name'
+2025-12-03 17:44:25,803 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:44:25,804 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:44:25,805 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:45:11,640 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:45:11,641 - app - INFO - Health check performed
+2025-12-03 17:45:11,641 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:45:13,696 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 17:45:13,697 - app - INFO - Response: GET / -> 200 (0.001s)
+2025-12-03 17:45:15,757 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:45:15,758 - app - INFO - Health check performed
+2025-12-03 17:45:15,758 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:45:17,788 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:45:17,789 - app - INFO - Getting all products
+2025-12-03 17:45:17,790 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:45:19,810 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:45:19,811 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:45:19,811 - app - INFO - Response: GET /test/rate-limit -> 200 (0.001s)
+2025-12-03 17:45:22,840 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:45:22,841 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:45:22,841 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:45:22,842 - app - ERROR - Unhandled exception: 'HTTPException' object is not callable
+2025-12-03 17:45:25,891 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:45:25,892 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:45:25,892 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:45:28,916 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:45:28,917 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:45:28,917 - app - INFO - Response: GET /test/rate-limit -> 200 (0.001s)
+2025-12-03 17:45:31,975 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:45:31,976 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:45:31,977 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:45:31,977 - app - ERROR - Unhandled exception: 'HTTPException' object is not callable
+2025-12-03 17:45:35,018 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:45:35,018 - app - INFO - Testing circuit breaker
+2025-12-03 17:45:35,256 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:45:35,469 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:45:35,471 - app - ERROR - External API call failed: Client error '404 Not Found' for url 'https://jsonplaceholder.typicode.com/posts/999'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-12-03 17:45:35,471 - app - ERROR - Circuit breaker test failed: 'str' object has no attribute 'name'
+2025-12-03 17:45:35,472 - app - ERROR - Unhandled exception: 'str' object has no attribute 'name'
+2025-12-03 17:45:49,209 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:45:49,209 - app - INFO - Testing circuit breaker
+2025-12-03 17:45:49,448 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:45:49,637 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:45:49,638 - app - ERROR - External API call failed: Client error '404 Not Found' for url 'https://jsonplaceholder.typicode.com/posts/999'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-12-03 17:45:49,638 - app - ERROR - Circuit breaker test failed: 'str' object has no attribute 'name'
+2025-12-03 17:45:49,639 - app - ERROR - Unhandled exception: 'str' object has no attribute 'name'
+2025-12-03 17:45:56,782 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:45:56,783 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:45:56,783 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:45:56,783 - app - ERROR - Unhandled exception: 'HTTPException' object is not callable
+2025-12-03 17:46:40,007 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 17:46:40,008 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 17:46:40,181 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 17:46:40,182 - app - INFO - Response: GET /openapi.json -> 200 (0.001s)
+2025-12-03 17:47:02,613 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:47:02,615 - app - INFO - Health check performed
+2025-12-03 17:47:02,615 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:47:04,660 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 17:47:04,660 - app - INFO - Response: GET / -> 200 (0.001s)
+2025-12-03 17:47:06,701 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:47:06,702 - app - INFO - Health check performed
+2025-12-03 17:47:06,703 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:47:08,744 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:47:08,745 - app - INFO - Getting all products
+2025-12-03 17:47:08,745 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:47:10,782 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:47:10,783 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:47:10,784 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:47:13,829 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:47:13,830 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:47:13,830 - app - INFO - Response: GET /test/rate-limit -> 200 (0.001s)
+2025-12-03 17:47:16,877 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:47:16,878 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:47:16,879 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:47:16,879 - app - INFO - Response: GET /test/rate-limit -> 429 (0.002s)
+2025-12-03 17:47:19,924 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:47:19,925 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:47:19,926 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:47:19,926 - app - INFO - Response: GET /test/rate-limit -> 429 (0.002s)
+2025-12-03 17:47:22,959 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:47:22,960 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:47:22,961 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:47:22,961 - app - INFO - Response: GET /test/rate-limit -> 429 (0.002s)
+2025-12-03 17:47:25,973 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:47:25,973 - app - INFO - Testing circuit breaker
+2025-12-03 17:47:26,255 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:47:26,435 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:47:26,437 - app - ERROR - External API call failed: Client error '404 Not Found' for url 'https://jsonplaceholder.typicode.com/posts/999'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-12-03 17:47:26,437 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.465s)
+2025-12-03 17:47:28,456 - app - INFO - Request: GET /metrics from 127.0.0.1
+2025-12-03 17:47:28,456 - app - INFO - Metrics requested
+2025-12-03 17:47:28,457 - app - INFO - Response: GET /metrics -> 200 (0.002s)
+2025-12-03 17:47:30,509 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 17:47:30,511 - app - INFO - Creating product: Test Product
+2025-12-03 17:47:30,511 - app - INFO - Product created with ID 4
+2025-12-03 17:47:30,512 - app - INFO - Response: POST /products -> 201 (0.002s)
+2025-12-03 17:47:32,551 - app - INFO - Request: GET /products/4 from 127.0.0.1
+2025-12-03 17:47:32,552 - app - INFO - Getting product 4
+2025-12-03 17:47:32,792 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/4
+2025-12-03 17:47:32,976 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/4 "HTTP/1.1 200 OK"
+2025-12-03 17:47:32,978 - app - INFO - Product 4 enriched with external data
+2025-12-03 17:47:32,978 - app - INFO - Response: GET /products/4 -> 200 (0.428s)
+2025-12-03 17:47:35,017 - app - INFO - Request: DELETE /products/4 from 127.0.0.1
+2025-12-03 17:47:35,018 - app - INFO - Deleting product 4
+2025-12-03 17:47:35,019 - app - INFO - Product 4 deleted: Test Product
+2025-12-03 17:47:35,019 - app - INFO - Response: DELETE /products/4 -> 200 (0.002s)
+2025-12-03 17:47:40,391 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 17:47:40,392 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 17:47:40,491 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 17:47:40,531 - fastapi - WARNING - email-validator not installed, email fields will be treated as str.
+To install, run: pip install email-validator
+2025-12-03 17:47:40,538 - app - INFO - Response: GET /openapi.json -> 200 (0.047s)
+2025-12-03 17:47:46,421 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:47:46,423 - app - INFO - Testing circuit breaker
+2025-12-03 17:47:47,036 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:47:47,234 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:47:47,237 - app - ERROR - External API call failed: Client error '404 Not Found' for url 'https://jsonplaceholder.typicode.com/posts/999'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-12-03 17:47:47,239 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.818s)
+2025-12-03 17:47:56,500 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:47:56,501 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:47:56,502 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:48:51,563 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:48:51,564 - app - INFO - Testing circuit breaker
+2025-12-03 17:48:51,826 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:48:51,989 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:48:51,991 - app - ERROR - External API call failed: Client error '404 Not Found' for url 'https://jsonplaceholder.typicode.com/posts/999'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-12-03 17:48:51,991 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.428s)
+2025-12-03 17:49:01,864 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:49:01,865 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:49:01,865 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:49:02,919 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:49:02,920 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:49:02,921 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:49:03,972 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:49:03,973 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:49:03,974 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:49:03,974 - app - INFO - Response: GET /test/rate-limit -> 429 (0.002s)
+2025-12-03 17:49:05,015 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:49:05,016 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:49:05,016 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:49:05,017 - app - INFO - Response: GET /test/rate-limit -> 429 (0.002s)
+2025-12-03 17:49:06,031 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:49:06,032 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:49:06,032 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:49:06,033 - app - INFO - Response: GET /test/rate-limit -> 429 (0.002s)
+2025-12-03 17:49:27,719 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:49:27,719 - app - INFO - Testing circuit breaker
+2025-12-03 17:49:27,995 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:49:28,174 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:49:28,176 - app - ERROR - External API call failed: Simulated failure
+2025-12-03 17:49:28,177 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.458s)
+2025-12-03 17:49:29,216 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:49:29,217 - app - INFO - Testing circuit breaker
+2025-12-03 17:49:29,457 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:49:29,630 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:49:29,632 - app - ERROR - External API call failed: Simulated failure
+2025-12-03 17:49:29,633 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.416s)
+2025-12-03 17:49:30,668 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:49:30,669 - app - INFO - Testing circuit breaker
+2025-12-03 17:49:30,907 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:49:31,081 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:49:31,083 - app - ERROR - External API call failed: Simulated failure
+2025-12-03 17:49:31,083 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.415s)
+2025-12-03 17:49:32,117 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:49:32,118 - app - INFO - Testing circuit breaker
+2025-12-03 17:49:32,354 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:49:32,555 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:49:32,556 - app - ERROR - External API call failed: Simulated failure
+2025-12-03 17:49:32,557 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.439s)
+2025-12-03 17:49:33,583 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:49:33,584 - app - INFO - Testing circuit breaker
+2025-12-03 17:49:33,820 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:49:33,982 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:49:33,984 - app - ERROR - External API call failed: Simulated failure
+2025-12-03 17:49:33,984 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.401s)
+2025-12-03 17:51:56,452 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:51:56,453 - app - INFO - Testing circuit breaker
+2025-12-03 17:51:56,718 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:51:56,918 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:51:56,920 - app - ERROR - External API call failed: Simulated failure
+2025-12-03 17:51:56,921 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.469s)
+2025-12-03 17:51:57,957 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:51:57,958 - app - INFO - Testing circuit breaker
+2025-12-03 17:51:58,197 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:51:58,364 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:51:58,365 - app - ERROR - External API call failed: Simulated failure
+2025-12-03 17:51:58,366 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.408s)
+2025-12-03 17:51:59,404 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:51:59,404 - app - INFO - Testing circuit breaker
+2025-12-03 17:51:59,642 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:51:59,816 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:51:59,818 - app - ERROR - External API call failed: Simulated failure
+2025-12-03 17:51:59,818 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.415s)
+2025-12-03 17:52:00,854 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:52:00,854 - app - INFO - Testing circuit breaker
+2025-12-03 17:52:01,089 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:52:01,299 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:52:01,300 - app - ERROR - External API call failed: Simulated failure
+2025-12-03 17:52:01,301 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.447s)
+2025-12-03 17:52:02,331 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:52:02,331 - app - INFO - Testing circuit breaker
+2025-12-03 17:52:02,564 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:52:02,753 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:52:02,755 - app - ERROR - External API call failed: Simulated failure
+2025-12-03 17:52:02,755 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.424s)
+2025-12-03 17:52:03,793 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:52:03,794 - app - INFO - Testing circuit breaker
+2025-12-03 17:52:04,028 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:52:04,180 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:52:04,186 - app - ERROR - External API call failed: Simulated failure
+2025-12-03 17:52:04,186 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.393s)
+2025-12-03 17:53:01,762 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:53:01,763 - app - INFO - Testing circuit breaker
+2025-12-03 17:53:02,022 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:53:02,223 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:53:02,225 - app - ERROR - External API call failed: Simulated circuit breaker failure
+2025-12-03 17:53:02,225 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:53:02,226 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.464s)
+2025-12-03 17:53:03,276 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:53:03,276 - app - INFO - Testing circuit breaker
+2025-12-03 17:53:03,508 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:53:03,713 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:53:03,715 - app - ERROR - External API call failed: Simulated circuit breaker failure
+2025-12-03 17:53:03,715 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:53:03,716 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.440s)
+2025-12-03 17:53:04,751 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:53:04,752 - app - INFO - Testing circuit breaker
+2025-12-03 17:53:05,008 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:53:05,202 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:53:05,204 - app - ERROR - External API call failed: Simulated circuit breaker failure
+2025-12-03 17:53:05,204 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:53:05,204 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.453s)
+2025-12-03 17:53:06,248 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:53:06,248 - app - INFO - Testing circuit breaker
+2025-12-03 17:53:06,507 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:53:06,701 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:53:06,703 - app - ERROR - External API call failed: Simulated circuit breaker failure
+2025-12-03 17:53:06,703 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:53:06,704 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.456s)
+2025-12-03 17:53:07,739 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:53:07,740 - app - INFO - Testing circuit breaker
+2025-12-03 17:53:07,988 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:53:08,165 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:53:08,166 - app - ERROR - External API call failed: Simulated circuit breaker failure
+2025-12-03 17:53:08,167 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:53:08,167 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.428s)
+2025-12-03 17:53:09,204 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:53:09,205 - app - INFO - Testing circuit breaker
+2025-12-03 17:53:09,451 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:53:09,616 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:53:09,624 - app - ERROR - External API call failed: Simulated circuit breaker failure
+2025-12-03 17:53:09,625 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:53:09,625 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.421s)
+2025-12-03 17:53:33,607 - app - INFO - Request: GET /redoc from 127.0.0.1
+2025-12-03 17:53:33,610 - app - INFO - Response: GET /redoc -> 200 (0.003s)
+2025-12-03 17:53:33,725 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 17:53:33,760 - fastapi - WARNING - email-validator not installed, email fields will be treated as str.
+To install, run: pip install email-validator
+2025-12-03 17:53:33,766 - app - INFO - Response: GET /openapi.json -> 200 (0.041s)
+2025-12-03 17:54:34,835 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:54:34,836 - app - INFO - Testing circuit breaker
+2025-12-03 17:54:35,105 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:54:35,106 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:54:35,107 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.272s)
+2025-12-03 17:54:36,147 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:54:36,148 - app - INFO - Testing circuit breaker
+2025-12-03 17:54:36,385 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:54:36,385 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:54:36,387 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.239s)
+2025-12-03 17:54:37,428 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:54:37,428 - app - INFO - Testing circuit breaker
+2025-12-03 17:54:37,670 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:54:37,671 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:54:37,672 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.244s)
+2025-12-03 17:54:38,701 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:54:38,701 - app - INFO - Testing circuit breaker
+2025-12-03 17:54:38,945 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:54:38,945 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:54:38,947 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.246s)
+2025-12-03 17:54:39,983 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:54:39,983 - app - INFO - Testing circuit breaker
+2025-12-03 17:54:40,230 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:54:40,231 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:54:40,232 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.249s)
+2025-12-03 17:54:41,271 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:54:41,271 - app - INFO - Testing circuit breaker
+2025-12-03 17:54:41,510 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:54:41,511 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:54:41,512 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.241s)
+2025-12-03 17:55:15,418 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:55:15,419 - app - INFO - Testing circuit breaker
+2025-12-03 17:55:15,419 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 0
+2025-12-03 17:55:15,681 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:55:15,682 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:55:15,682 - app - INFO - Circuit breaker state after failure: CircuitClosedState, fail count: 0
+2025-12-03 17:55:15,683 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.265s)
+2025-12-03 17:55:56,531 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:55:56,532 - app - INFO - Testing circuit breaker
+2025-12-03 17:55:56,533 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 0
+2025-12-03 17:55:56,533 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:55:56,533 - app - INFO - Circuit breaker state after failure: CircuitClosedState, fail count: 1
+2025-12-03 17:55:56,533 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:55:57,562 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:55:57,563 - app - INFO - Testing circuit breaker
+2025-12-03 17:55:57,563 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 1
+2025-12-03 17:55:57,563 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:55:57,563 - app - INFO - Circuit breaker state after failure: CircuitClosedState, fail count: 2
+2025-12-03 17:55:57,564 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:55:58,595 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:55:58,596 - app - INFO - Testing circuit breaker
+2025-12-03 17:55:58,596 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 2
+2025-12-03 17:55:58,596 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:55:58,597 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.001s)
+2025-12-03 17:55:59,641 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:55:59,642 - app - INFO - Testing circuit breaker
+2025-12-03 17:55:59,642 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 17:55:59,642 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:55:59,643 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:56:00,686 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:56:00,687 - app - INFO - Testing circuit breaker
+2025-12-03 17:56:00,687 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 17:56:00,687 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:56:00,688 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:56:01,722 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:56:01,722 - app - INFO - Testing circuit breaker
+2025-12-03 17:56:01,723 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 17:56:01,723 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:56:01,724 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:56:16,018 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:56:16,019 - app - INFO - Health check performed
+2025-12-03 17:56:16,019 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:56:18,074 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 17:56:18,075 - app - INFO - Response: GET / -> 200 (0.001s)
+2025-12-03 17:56:20,126 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:56:20,127 - app - INFO - Health check performed
+2025-12-03 17:56:20,127 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:56:22,182 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:56:22,183 - app - INFO - Getting all products
+2025-12-03 17:56:22,184 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:56:24,216 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:56:24,217 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:56:24,217 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:56:27,269 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:56:27,270 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:56:27,271 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:56:30,318 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:56:30,319 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:56:30,319 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:56:30,320 - app - INFO - Response: GET /test/rate-limit -> 429 (0.002s)
+2025-12-03 17:56:33,371 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:56:33,371 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:56:33,372 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:56:33,372 - app - INFO - Response: GET /test/rate-limit -> 429 (0.002s)
+2025-12-03 17:56:36,421 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:56:36,422 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:56:36,422 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:56:36,423 - app - INFO - Response: GET /test/rate-limit -> 429 (0.002s)
+2025-12-03 17:56:39,476 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:56:39,476 - app - INFO - Testing circuit breaker
+2025-12-03 17:56:39,477 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 17:56:39,477 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:56:39,477 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:56:41,501 - app - INFO - Request: GET /metrics from 127.0.0.1
+2025-12-03 17:56:41,501 - app - INFO - Metrics requested
+2025-12-03 17:56:41,503 - app - INFO - Response: GET /metrics -> 200 (0.002s)
+2025-12-03 17:56:43,539 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 17:56:43,542 - app - INFO - Creating product: Test Product
+2025-12-03 17:56:43,543 - app - INFO - Product created with ID 4
+2025-12-03 17:56:43,544 - app - INFO - Response: POST /products -> 201 (0.004s)
+2025-12-03 17:56:43,883 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:56:43,884 - app - INFO - Health check performed
+2025-12-03 17:56:43,885 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:56:44,634 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:56:44,635 - app - INFO - Health check performed
+2025-12-03 17:56:44,636 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:56:45,377 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:56:45,377 - app - INFO - Health check performed
+2025-12-03 17:56:45,378 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:56:45,598 - app - INFO - Request: GET /products/4 from 127.0.0.1
+2025-12-03 17:56:45,600 - app - INFO - Getting product 4
+2025-12-03 17:56:45,601 - app - WARNING - Circuit breaker open for product 4
+2025-12-03 17:56:45,602 - app - INFO - Response: GET /products/4 -> 200 (0.004s)
+2025-12-03 17:56:46,182 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:56:46,183 - app - INFO - Health check performed
+2025-12-03 17:56:46,183 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:56:46,898 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:56:46,899 - app - INFO - Health check performed
+2025-12-03 17:56:46,900 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:56:47,658 - app - INFO - Request: DELETE /products/4 from 127.0.0.1
+2025-12-03 17:56:47,659 - app - INFO - Deleting product 4
+2025-12-03 17:56:47,660 - app - INFO - Product 4 deleted: Test Product
+2025-12-03 17:56:47,661 - app - INFO - Response: DELETE /products/4 -> 200 (0.003s)
+2025-12-03 17:57:16,345 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 17:57:16,346 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 17:57:16,507 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 17:57:16,546 - fastapi - WARNING - email-validator not installed, email fields will be treated as str.
+To install, run: pip install email-validator
+2025-12-03 17:57:16,554 - app - INFO - Response: GET /openapi.json -> 200 (0.047s)
+2025-12-03 17:57:29,555 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:29,556 - app - INFO - Getting all products
+2025-12-03 17:57:29,557 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:57:30,593 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:30,594 - app - INFO - Getting all products
+2025-12-03 17:57:30,594 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:57:31,098 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:31,099 - app - INFO - Getting all products
+2025-12-03 17:57:31,100 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:57:31,330 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:31,332 - app - INFO - Getting all products
+2025-12-03 17:57:31,333 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:57:31,474 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:31,476 - app - INFO - Getting all products
+2025-12-03 17:57:31,477 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:57:31,625 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:31,626 - app - INFO - Getting all products
+2025-12-03 17:57:31,627 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:57:31,762 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:31,764 - app - INFO - Getting all products
+2025-12-03 17:57:31,765 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:57:31,893 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:31,894 - app - INFO - Getting all products
+2025-12-03 17:57:31,895 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:57:32,001 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:32,002 - app - INFO - Getting all products
+2025-12-03 17:57:32,002 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:57:32,136 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:32,138 - app - INFO - Getting all products
+2025-12-03 17:57:32,139 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:57:33,601 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:33,603 - app - INFO - Getting all products
+2025-12-03 17:57:33,604 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:57:33,727 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:33,729 - app - INFO - Getting all products
+2025-12-03 17:57:33,730 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:57:33,857 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:33,859 - app - INFO - Getting all products
+2025-12-03 17:57:33,859 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:57:34,012 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:57:34,013 - app - INFO - Getting all products
+2025-12-03 17:57:34,014 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:57:44,852 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:57:44,854 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:57:44,855 - app - INFO - Response: GET /test/rate-limit -> 200 (0.003s)
+2025-12-03 17:57:45,952 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:57:45,953 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:57:45,954 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:57:46,426 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:57:46,427 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:57:46,428 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:57:46,428 - app - INFO - Response: GET /test/rate-limit -> 429 (0.003s)
+2025-12-03 17:57:46,574 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:57:46,575 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:57:46,576 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:57:46,576 - app - INFO - Response: GET /test/rate-limit -> 429 (0.002s)
+2025-12-03 17:57:46,720 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:57:46,722 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:57:46,722 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:57:46,723 - app - INFO - Response: GET /test/rate-limit -> 429 (0.002s)
+2025-12-03 17:57:47,258 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:57:47,259 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:57:47,259 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:57:47,260 - app - INFO - Response: GET /test/rate-limit -> 429 (0.002s)
+2025-12-03 17:57:47,407 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:57:47,409 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:57:47,409 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:57:47,410 - app - INFO - Response: GET /test/rate-limit -> 429 (0.002s)
+2025-12-03 17:57:49,057 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:57:49,059 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:57:49,059 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:57:49,060 - app - INFO - Response: GET /test/rate-limit -> 429 (0.003s)
+2025-12-03 17:57:49,432 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:57:49,433 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:57:49,434 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:57:49,434 - app - INFO - Response: GET /test/rate-limit -> 429 (0.003s)
+2025-12-03 17:57:51,510 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:57:51,512 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:57:51,512 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:57:51,513 - app - INFO - Response: GET /test/rate-limit -> 429 (0.003s)
+2025-12-03 17:57:57,492 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:57:57,493 - app - INFO - Testing circuit breaker
+2025-12-03 17:57:57,494 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 4
+2025-12-03 17:57:57,494 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:57:57,495 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 17:58:00,307 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:58:00,308 - app - INFO - Testing circuit breaker
+2025-12-03 17:58:00,308 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 17:58:00,308 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:58:00,309 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:58:00,833 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:58:00,834 - app - INFO - Testing circuit breaker
+2025-12-03 17:58:00,834 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 17:58:00,834 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:58:00,835 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:58:01,276 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:58:01,277 - app - INFO - Testing circuit breaker
+2025-12-03 17:58:01,277 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 17:58:01,277 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:58:01,278 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:58:01,444 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:58:01,445 - app - INFO - Testing circuit breaker
+2025-12-03 17:58:01,446 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 17:58:01,446 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:58:01,447 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:58:01,604 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:58:01,604 - app - INFO - Testing circuit breaker
+2025-12-03 17:58:01,604 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 17:58:01,605 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:58:01,605 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:58:01,908 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:58:01,909 - app - INFO - Testing circuit breaker
+2025-12-03 17:58:01,909 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 17:58:01,909 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:58:01,910 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:58:02,050 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:58:02,051 - app - INFO - Testing circuit breaker
+2025-12-03 17:58:02,051 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 17:58:02,052 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:58:02,052 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:58:03,658 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:58:03,658 - app - INFO - Testing circuit breaker
+2025-12-03 17:58:03,659 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 17:58:03,659 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:58:03,660 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:58:04,072 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:58:04,073 - app - INFO - Testing circuit breaker
+2025-12-03 17:58:04,073 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 17:58:04,074 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:58:04,075 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 17:58:04,752 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:58:04,753 - app - INFO - Testing circuit breaker
+2025-12-03 17:58:04,754 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 17:58:04,754 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:58:04,755 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 17:58:05,325 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:58:05,326 - app - INFO - Testing circuit breaker
+2025-12-03 17:58:05,326 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 17:58:05,327 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:58:05,328 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 17:58:05,845 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:58:05,845 - app - INFO - Testing circuit breaker
+2025-12-03 17:58:05,845 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 17:58:05,846 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:58:05,846 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:59:33,894 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:33,897 - app - INFO - Getting all products
+2025-12-03 17:59:33,899 - app - INFO - Response: GET /products -> 200 (0.005s)
+2025-12-03 17:59:34,575 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:34,577 - app - INFO - Getting all products
+2025-12-03 17:59:34,578 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:59:35,311 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:35,314 - app - INFO - Getting all products
+2025-12-03 17:59:35,315 - app - INFO - Response: GET /products -> 200 (0.004s)
+2025-12-03 17:59:35,886 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:35,888 - app - INFO - Getting all products
+2025-12-03 17:59:35,889 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:59:36,405 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:36,407 - app - INFO - Getting all products
+2025-12-03 17:59:36,408 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:59:36,925 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:36,927 - app - INFO - Getting all products
+2025-12-03 17:59:36,928 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:37,342 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:37,344 - app - INFO - Getting all products
+2025-12-03 17:59:37,344 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:37,856 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:37,858 - app - INFO - Getting all products
+2025-12-03 17:59:37,860 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:59:38,371 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:38,373 - app - INFO - Getting all products
+2025-12-03 17:59:38,373 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:38,824 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:38,825 - app - INFO - Getting all products
+2025-12-03 17:59:38,826 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:39,351 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:39,352 - app - INFO - Getting all products
+2025-12-03 17:59:39,353 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:39,829 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:39,832 - app - INFO - Getting all products
+2025-12-03 17:59:39,833 - app - INFO - Response: GET /products -> 200 (0.004s)
+2025-12-03 17:59:40,307 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:40,313 - app - INFO - Getting all products
+2025-12-03 17:59:40,314 - app - INFO - Response: GET /products -> 200 (0.007s)
+2025-12-03 17:59:40,772 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:40,773 - app - INFO - Getting all products
+2025-12-03 17:59:40,774 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:41,954 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:41,956 - app - INFO - Getting all products
+2025-12-03 17:59:41,958 - app - INFO - Response: GET /products -> 200 (0.004s)
+2025-12-03 17:59:42,746 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:42,750 - app - INFO - Getting all products
+2025-12-03 17:59:42,751 - app - INFO - Response: GET /products -> 200 (0.005s)
+2025-12-03 17:59:43,195 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:43,198 - app - INFO - Getting all products
+2025-12-03 17:59:43,199 - app - INFO - Response: GET /products -> 200 (0.004s)
+2025-12-03 17:59:47,738 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:59:47,739 - app - INFO - Testing circuit breaker
+2025-12-03 17:59:47,740 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 0
+2025-12-03 17:59:47,741 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:59:47,741 - app - INFO - Circuit breaker state after failure: CircuitClosedState, fail count: 1
+2025-12-03 17:59:47,742 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.004s)
+2025-12-03 17:59:48,039 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:59:48,040 - app - INFO - Testing circuit breaker
+2025-12-03 17:59:48,040 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 1
+2025-12-03 17:59:48,040 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 17:59:48,041 - app - INFO - Circuit breaker state after failure: CircuitClosedState, fail count: 2
+2025-12-03 17:59:48,042 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 17:59:48,205 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:59:48,205 - app - INFO - Testing circuit breaker
+2025-12-03 17:59:48,206 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 2
+2025-12-03 17:59:48,206 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:59:48,207 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 17:59:48,346 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:59:48,346 - app - INFO - Testing circuit breaker
+2025-12-03 17:59:48,347 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 17:59:48,348 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:59:48,349 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 17:59:48,480 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:59:48,481 - app - INFO - Testing circuit breaker
+2025-12-03 17:59:48,482 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 17:59:48,482 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:59:48,483 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 17:59:48,628 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:59:48,629 - app - INFO - Testing circuit breaker
+2025-12-03 17:59:48,629 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 17:59:48,629 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:59:48,630 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:59:48,765 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:59:48,766 - app - INFO - Testing circuit breaker
+2025-12-03 17:59:48,766 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 17:59:48,767 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:59:48,767 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:59:48,914 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:59:48,915 - app - INFO - Testing circuit breaker
+2025-12-03 17:59:48,915 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 17:59:48,915 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:59:48,917 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 17:59:49,047 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:59:49,048 - app - INFO - Testing circuit breaker
+2025-12-03 17:59:49,048 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 17:59:49,049 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:59:49,049 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:59:49,175 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:59:49,176 - app - INFO - Testing circuit breaker
+2025-12-03 17:59:49,176 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 17:59:49,176 - app - WARNING - Circuit breaker is open during test
+2025-12-03 17:59:49,177 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 17:59:52,889 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:52,890 - app - INFO - Getting all products
+2025-12-03 17:59:52,891 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:53,039 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:53,040 - app - INFO - Getting all products
+2025-12-03 17:59:53,042 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:59:53,176 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:53,177 - app - INFO - Getting all products
+2025-12-03 17:59:53,178 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:53,319 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:53,320 - app - INFO - Getting all products
+2025-12-03 17:59:53,320 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:53,465 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:53,466 - app - INFO - Getting all products
+2025-12-03 17:59:53,467 - app - INFO - Response: GET /products -> 200 (0.001s)
+2025-12-03 17:59:53,582 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:53,584 - app - INFO - Getting all products
+2025-12-03 17:59:53,584 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:53,716 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:53,728 - app - INFO - Getting all products
+2025-12-03 17:59:53,730 - app - INFO - Response: GET /products -> 200 (0.013s)
+2025-12-03 17:59:53,873 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:53,875 - app - INFO - Getting all products
+2025-12-03 17:59:53,876 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:53,992 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:53,994 - app - INFO - Getting all products
+2025-12-03 17:59:53,995 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:59:54,106 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:54,107 - app - INFO - Getting all products
+2025-12-03 17:59:54,108 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:54,264 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:54,264 - app - INFO - Getting all products
+2025-12-03 17:59:54,265 - app - INFO - Response: GET /products -> 200 (0.001s)
+2025-12-03 17:59:54,385 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:54,388 - app - INFO - Getting all products
+2025-12-03 17:59:54,389 - app - INFO - Response: GET /products -> 200 (0.004s)
+2025-12-03 17:59:54,523 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:54,524 - app - INFO - Getting all products
+2025-12-03 17:59:54,525 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:54,775 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:54,776 - app - INFO - Getting all products
+2025-12-03 17:59:54,777 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:54,929 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:54,930 - app - INFO - Getting all products
+2025-12-03 17:59:54,931 - app - INFO - Response: GET /products -> 200 (0.001s)
+2025-12-03 17:59:55,056 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:55,058 - app - INFO - Getting all products
+2025-12-03 17:59:55,059 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:59:55,213 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:55,215 - app - INFO - Getting all products
+2025-12-03 17:59:55,216 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:55,350 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:55,355 - app - INFO - Getting all products
+2025-12-03 17:59:55,363 - app - INFO - Response: GET /products -> 200 (0.013s)
+2025-12-03 17:59:55,484 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:55,485 - app - INFO - Getting all products
+2025-12-03 17:59:55,485 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:55,736 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:55,740 - app - INFO - Getting all products
+2025-12-03 17:59:55,741 - app - INFO - Response: GET /products -> 200 (0.005s)
+2025-12-03 17:59:55,887 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:55,888 - app - INFO - Getting all products
+2025-12-03 17:59:55,889 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:56,023 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:56,025 - app - INFO - Getting all products
+2025-12-03 17:59:56,025 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:56,159 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:56,160 - app - INFO - Getting all products
+2025-12-03 17:59:56,161 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:56,290 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:56,292 - app - INFO - Getting all products
+2025-12-03 17:59:56,293 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:59:56,461 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:56,462 - app - INFO - Getting all products
+2025-12-03 17:59:56,463 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:59:56,609 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:56,610 - app - INFO - Getting all products
+2025-12-03 17:59:56,611 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:56,731 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:56,732 - app - INFO - Getting all products
+2025-12-03 17:59:56,733 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:56,878 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:56,879 - app - INFO - Getting all products
+2025-12-03 17:59:56,880 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:57,034 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:57,035 - app - INFO - Getting all products
+2025-12-03 17:59:57,036 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:57,174 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:57,175 - app - INFO - Getting all products
+2025-12-03 17:59:57,175 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:57,328 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:57,330 - app - INFO - Getting all products
+2025-12-03 17:59:57,330 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:57,465 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:57,467 - app - INFO - Getting all products
+2025-12-03 17:59:57,469 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:59:57,607 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:57,608 - app - INFO - Getting all products
+2025-12-03 17:59:57,609 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:59:57,753 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:57,755 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:57,755 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:57,756 - app - INFO - Response: GET /products -> 429 (0.003s)
+2025-12-03 17:59:57,905 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:57,906 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:57,906 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:57,907 - app - INFO - Response: GET /products -> 429 (0.003s)
+2025-12-03 17:59:58,060 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:58,061 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:58,061 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:58,062 - app - INFO - Response: GET /products -> 429 (0.002s)
+2025-12-03 17:59:58,190 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:58,191 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:58,192 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:58,192 - app - INFO - Response: GET /products -> 429 (0.002s)
+2025-12-03 17:59:58,352 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:58,353 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:58,354 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:58,354 - app - INFO - Response: GET /products -> 429 (0.002s)
+2025-12-03 17:59:58,479 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:58,480 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:58,481 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:58,481 - app - INFO - Response: GET /products -> 429 (0.002s)
+2025-12-03 17:59:58,625 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:58,627 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:58,628 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:58,628 - app - INFO - Response: GET /products -> 429 (0.003s)
+2025-12-03 17:59:58,757 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:58,759 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:58,759 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:58,760 - app - INFO - Response: GET /products -> 429 (0.004s)
+2025-12-03 17:59:58,910 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:58,911 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:58,911 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:58,912 - app - INFO - Response: GET /products -> 429 (0.002s)
+2025-12-03 17:59:59,048 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:59,049 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:59,050 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:59,050 - app - INFO - Response: GET /products -> 429 (0.002s)
+2025-12-03 17:59:59,211 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:59,212 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:59,213 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:59,213 - app - INFO - Response: GET /products -> 429 (0.003s)
+2025-12-03 17:59:59,343 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:59,344 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:59,345 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:59,345 - app - INFO - Response: GET /products -> 429 (0.002s)
+2025-12-03 17:59:59,542 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:59,543 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:59,544 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:59,545 - app - INFO - Response: GET /products -> 429 (0.002s)
+2025-12-03 17:59:59,718 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:59:59,721 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 17:59:59,723 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:59:59,725 - app - INFO - Response: GET /products -> 429 (0.007s)
+2025-12-03 18:00:21,654 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:21,656 - app - INFO - Creating product: New Product
+2025-12-03 18:00:21,657 - app - INFO - Product created with ID 4
+2025-12-03 18:00:21,658 - app - INFO - Response: POST /products -> 201 (0.003s)
+2025-12-03 18:00:23,298 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:23,301 - app - INFO - Creating product: New Product
+2025-12-03 18:00:23,302 - app - INFO - Product created with ID 5
+2025-12-03 18:00:23,302 - app - INFO - Response: POST /products -> 201 (0.004s)
+2025-12-03 18:00:23,704 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:23,709 - app - INFO - Creating product: New Product
+2025-12-03 18:00:23,710 - app - INFO - Product created with ID 6
+2025-12-03 18:00:23,710 - app - INFO - Response: POST /products -> 201 (0.006s)
+2025-12-03 18:00:23,874 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:23,876 - app - INFO - Creating product: New Product
+2025-12-03 18:00:23,876 - app - INFO - Product created with ID 7
+2025-12-03 18:00:23,876 - app - INFO - Response: POST /products -> 201 (0.003s)
+2025-12-03 18:00:24,035 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:24,037 - app - INFO - Creating product: New Product
+2025-12-03 18:00:24,038 - app - INFO - Product created with ID 8
+2025-12-03 18:00:24,039 - app - INFO - Response: POST /products -> 201 (0.004s)
+2025-12-03 18:00:24,172 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:24,174 - app - INFO - Creating product: New Product
+2025-12-03 18:00:24,174 - app - INFO - Product created with ID 9
+2025-12-03 18:00:24,175 - app - INFO - Response: POST /products -> 201 (0.003s)
+2025-12-03 18:00:24,310 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:24,312 - app - INFO - Creating product: New Product
+2025-12-03 18:00:24,313 - app - INFO - Product created with ID 10
+2025-12-03 18:00:24,313 - app - INFO - Response: POST /products -> 201 (0.003s)
+2025-12-03 18:00:24,448 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:24,451 - app - INFO - Creating product: New Product
+2025-12-03 18:00:24,451 - app - INFO - Product created with ID 11
+2025-12-03 18:00:24,452 - app - INFO - Response: POST /products -> 201 (0.004s)
+2025-12-03 18:00:24,605 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:24,607 - app - INFO - Creating product: New Product
+2025-12-03 18:00:24,610 - app - INFO - Product created with ID 12
+2025-12-03 18:00:24,611 - app - INFO - Response: POST /products -> 201 (0.007s)
+2025-12-03 18:00:24,740 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:24,742 - app - INFO - Creating product: New Product
+2025-12-03 18:00:24,742 - app - INFO - Product created with ID 13
+2025-12-03 18:00:24,743 - app - INFO - Response: POST /products -> 201 (0.003s)
+2025-12-03 18:00:26,444 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:26,446 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:00:26,446 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:00:26,447 - app - INFO - Response: POST /products -> 429 (0.003s)
+2025-12-03 18:00:26,576 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:26,578 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:00:26,579 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:00:26,579 - app - INFO - Response: POST /products -> 429 (0.003s)
+2025-12-03 18:00:26,723 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:26,724 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:00:26,725 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:00:26,725 - app - INFO - Response: POST /products -> 429 (0.003s)
+2025-12-03 18:00:26,879 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:26,881 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:00:26,881 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:00:26,882 - app - INFO - Response: POST /products -> 429 (0.002s)
+2025-12-03 18:00:27,028 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:00:27,030 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:00:27,031 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:00:27,032 - app - INFO - Response: POST /products -> 429 (0.003s)
+2025-12-03 18:01:19,198 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:01:19,199 - app - INFO - Testing circuit breaker
+2025-12-03 18:01:19,199 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:01:19,199 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:01:19,200 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:01:21,346 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:01:21,368 - app - INFO - Testing circuit breaker
+2025-12-03 18:01:21,369 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 4
+2025-12-03 18:01:21,370 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:01:21,371 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.024s)
+2025-12-03 18:01:21,950 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:01:21,956 - app - INFO - Testing circuit breaker
+2025-12-03 18:01:21,957 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 4
+2025-12-03 18:01:21,957 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:01:21,958 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.008s)
+2025-12-03 18:01:22,574 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:01:22,580 - app - INFO - Testing circuit breaker
+2025-12-03 18:01:22,581 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 4
+2025-12-03 18:01:22,581 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:01:22,582 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.007s)
+2025-12-03 18:04:15,306 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:15,309 - app - INFO - Getting product 100
+2025-12-03 18:04:15,309 - app - WARNING - Product 100 not found
+2025-12-03 18:04:15,310 - app - INFO - Response: GET /products/100 -> 404 (0.004s)
+2025-12-03 18:04:16,233 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:16,236 - app - INFO - Getting product 100
+2025-12-03 18:04:16,236 - app - WARNING - Product 100 not found
+2025-12-03 18:04:16,238 - app - INFO - Response: GET /products/100 -> 404 (0.005s)
+2025-12-03 18:04:16,772 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:16,774 - app - INFO - Getting product 100
+2025-12-03 18:04:16,774 - app - WARNING - Product 100 not found
+2025-12-03 18:04:16,775 - app - INFO - Response: GET /products/100 -> 404 (0.002s)
+2025-12-03 18:04:17,171 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:17,173 - app - INFO - Getting product 100
+2025-12-03 18:04:17,173 - app - WARNING - Product 100 not found
+2025-12-03 18:04:17,175 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:17,493 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:17,495 - app - INFO - Getting product 100
+2025-12-03 18:04:17,495 - app - WARNING - Product 100 not found
+2025-12-03 18:04:17,496 - app - INFO - Response: GET /products/100 -> 404 (0.004s)
+2025-12-03 18:04:17,691 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:17,692 - app - INFO - Getting product 100
+2025-12-03 18:04:17,692 - app - WARNING - Product 100 not found
+2025-12-03 18:04:17,693 - app - INFO - Response: GET /products/100 -> 404 (0.002s)
+2025-12-03 18:04:17,853 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:17,854 - app - INFO - Getting product 100
+2025-12-03 18:04:17,855 - app - WARNING - Product 100 not found
+2025-12-03 18:04:17,856 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:18,003 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:18,005 - app - INFO - Getting product 100
+2025-12-03 18:04:18,005 - app - WARNING - Product 100 not found
+2025-12-03 18:04:18,006 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:18,166 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:18,168 - app - INFO - Getting product 100
+2025-12-03 18:04:18,168 - app - WARNING - Product 100 not found
+2025-12-03 18:04:18,168 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:18,451 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:18,453 - app - INFO - Getting product 100
+2025-12-03 18:04:18,453 - app - WARNING - Product 100 not found
+2025-12-03 18:04:18,454 - app - INFO - Response: GET /products/100 -> 404 (0.004s)
+2025-12-03 18:04:18,586 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:18,587 - app - INFO - Getting product 100
+2025-12-03 18:04:18,587 - app - WARNING - Product 100 not found
+2025-12-03 18:04:18,588 - app - INFO - Response: GET /products/100 -> 404 (0.002s)
+2025-12-03 18:04:18,727 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:18,729 - app - INFO - Getting product 100
+2025-12-03 18:04:18,729 - app - WARNING - Product 100 not found
+2025-12-03 18:04:18,730 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:18,888 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:18,889 - app - INFO - Getting product 100
+2025-12-03 18:04:18,890 - app - WARNING - Product 100 not found
+2025-12-03 18:04:18,890 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:19,004 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:19,005 - app - INFO - Getting product 100
+2025-12-03 18:04:19,005 - app - WARNING - Product 100 not found
+2025-12-03 18:04:19,006 - app - INFO - Response: GET /products/100 -> 404 (0.002s)
+2025-12-03 18:04:19,142 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:19,144 - app - INFO - Getting product 100
+2025-12-03 18:04:19,144 - app - WARNING - Product 100 not found
+2025-12-03 18:04:19,145 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:19,275 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:19,277 - app - INFO - Getting product 100
+2025-12-03 18:04:19,277 - app - WARNING - Product 100 not found
+2025-12-03 18:04:19,278 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:19,414 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:19,416 - app - INFO - Getting product 100
+2025-12-03 18:04:19,416 - app - WARNING - Product 100 not found
+2025-12-03 18:04:19,417 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:19,563 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:19,564 - app - INFO - Getting product 100
+2025-12-03 18:04:19,565 - app - WARNING - Product 100 not found
+2025-12-03 18:04:19,565 - app - INFO - Response: GET /products/100 -> 404 (0.002s)
+2025-12-03 18:04:19,712 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:19,714 - app - INFO - Getting product 100
+2025-12-03 18:04:19,715 - app - WARNING - Product 100 not found
+2025-12-03 18:04:19,716 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:19,838 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:19,841 - app - INFO - Getting product 100
+2025-12-03 18:04:19,841 - app - WARNING - Product 100 not found
+2025-12-03 18:04:19,842 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:19,990 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:19,992 - app - INFO - Getting product 100
+2025-12-03 18:04:19,992 - app - WARNING - Product 100 not found
+2025-12-03 18:04:19,993 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:20,135 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:20,136 - app - INFO - Getting product 100
+2025-12-03 18:04:20,137 - app - WARNING - Product 100 not found
+2025-12-03 18:04:20,138 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:20,265 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:20,266 - app - INFO - Getting product 100
+2025-12-03 18:04:20,266 - app - WARNING - Product 100 not found
+2025-12-03 18:04:20,267 - app - INFO - Response: GET /products/100 -> 404 (0.002s)
+2025-12-03 18:04:20,414 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:20,417 - app - INFO - Getting product 100
+2025-12-03 18:04:20,417 - app - WARNING - Product 100 not found
+2025-12-03 18:04:20,418 - app - INFO - Response: GET /products/100 -> 404 (0.004s)
+2025-12-03 18:04:20,560 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:20,562 - app - INFO - Getting product 100
+2025-12-03 18:04:20,562 - app - WARNING - Product 100 not found
+2025-12-03 18:04:20,563 - app - INFO - Response: GET /products/100 -> 404 (0.003s)
+2025-12-03 18:04:20,702 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:20,703 - app - INFO - Getting product 100
+2025-12-03 18:04:20,703 - app - WARNING - Product 100 not found
+2025-12-03 18:04:20,704 - app - INFO - Response: GET /products/100 -> 404 (0.002s)
+2025-12-03 18:04:20,839 - app - INFO - Request: GET /products/100 from 127.0.0.1
+2025-12-03 18:04:20,840 - app - INFO - Getting product 100
+2025-12-03 18:04:20,841 - app - WARNING - Product 100 not found
+2025-12-03 18:04:20,841 - app - INFO - Response: GET /products/100 -> 404 (0.002s)
+2025-12-03 18:05:11,770 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:11,771 - app - INFO - Getting all products
+2025-12-03 18:05:11,772 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:13,222 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:13,223 - app - INFO - Getting all products
+2025-12-03 18:05:13,224 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:13,356 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:13,358 - app - INFO - Getting all products
+2025-12-03 18:05:13,359 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:13,460 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:13,462 - app - INFO - Getting all products
+2025-12-03 18:05:13,462 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:13,597 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:13,598 - app - INFO - Getting all products
+2025-12-03 18:05:13,599 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:13,724 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:13,725 - app - INFO - Getting all products
+2025-12-03 18:05:13,726 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:13,859 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:13,860 - app - INFO - Getting all products
+2025-12-03 18:05:13,861 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:13,990 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:13,992 - app - INFO - Getting all products
+2025-12-03 18:05:13,993 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:05:14,133 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:14,134 - app - INFO - Getting all products
+2025-12-03 18:05:14,135 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:14,250 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:14,251 - app - INFO - Getting all products
+2025-12-03 18:05:14,252 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:14,402 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:14,404 - app - INFO - Getting all products
+2025-12-03 18:05:14,404 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:14,517 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:14,519 - app - INFO - Getting all products
+2025-12-03 18:05:14,519 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:14,798 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:14,799 - app - INFO - Getting all products
+2025-12-03 18:05:14,800 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:14,932 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:14,933 - app - INFO - Getting all products
+2025-12-03 18:05:14,934 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:15,097 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:15,099 - app - INFO - Getting all products
+2025-12-03 18:05:15,100 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:05:15,211 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:15,212 - app - INFO - Getting all products
+2025-12-03 18:05:15,213 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:05:15,355 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:15,357 - app - INFO - Getting all products
+2025-12-03 18:05:15,358 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:05:15,469 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:15,470 - app - INFO - Getting all products
+2025-12-03 18:05:15,471 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:15,627 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:15,628 - app - INFO - Getting all products
+2025-12-03 18:05:15,629 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:05:15,745 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:15,747 - app - INFO - Getting all products
+2025-12-03 18:05:15,747 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:15,892 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:15,893 - app - INFO - Getting all products
+2025-12-03 18:05:15,894 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:16,017 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:16,018 - app - INFO - Getting all products
+2025-12-03 18:05:16,019 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:16,166 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:16,167 - app - INFO - Getting all products
+2025-12-03 18:05:16,167 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:16,296 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:16,297 - app - INFO - Getting all products
+2025-12-03 18:05:16,298 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:16,452 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:16,454 - app - INFO - Getting all products
+2025-12-03 18:05:16,455 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:16,595 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:16,596 - app - INFO - Getting all products
+2025-12-03 18:05:16,597 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:16,726 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:16,727 - app - INFO - Getting all products
+2025-12-03 18:05:16,727 - app - INFO - Response: GET /products -> 200 (0.001s)
+2025-12-03 18:05:16,841 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:16,843 - app - INFO - Getting all products
+2025-12-03 18:05:16,844 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:16,987 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:16,988 - app - INFO - Getting all products
+2025-12-03 18:05:16,990 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:05:17,111 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:17,112 - app - INFO - Getting all products
+2025-12-03 18:05:17,113 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:17,263 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:17,264 - app - INFO - Getting all products
+2025-12-03 18:05:17,265 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:17,414 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:17,416 - app - INFO - Getting all products
+2025-12-03 18:05:17,417 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:05:17,546 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:17,547 - app - INFO - Getting all products
+2025-12-03 18:05:17,548 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:17,706 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:17,708 - app - INFO - Getting all products
+2025-12-03 18:05:17,709 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:05:17,850 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:17,852 - app - INFO - Getting all products
+2025-12-03 18:05:17,853 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:05:17,959 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:17,960 - app - INFO - Getting all products
+2025-12-03 18:05:17,961 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:18,107 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:18,108 - app - INFO - Getting all products
+2025-12-03 18:05:18,110 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:05:18,266 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:18,267 - app - INFO - Getting all products
+2025-12-03 18:05:18,268 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:18,408 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:18,408 - app - INFO - Getting all products
+2025-12-03 18:05:18,409 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:18,547 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:18,549 - app - INFO - Getting all products
+2025-12-03 18:05:18,550 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:18,699 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:18,700 - app - INFO - Getting all products
+2025-12-03 18:05:18,701 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:18,834 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:18,836 - app - INFO - Getting all products
+2025-12-03 18:05:18,837 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:05:18,978 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:18,980 - app - INFO - Getting all products
+2025-12-03 18:05:18,982 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:05:19,133 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:19,134 - app - INFO - Getting all products
+2025-12-03 18:05:19,135 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:19,246 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:19,247 - app - INFO - Getting all products
+2025-12-03 18:05:19,248 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:19,376 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:19,377 - app - INFO - Getting all products
+2025-12-03 18:05:19,378 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:19,535 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:19,536 - app - INFO - Getting all products
+2025-12-03 18:05:19,537 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:19,664 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:19,666 - app - INFO - Getting all products
+2025-12-03 18:05:19,667 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:05:19,822 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:19,823 - app - INFO - Getting all products
+2025-12-03 18:05:19,824 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:19,924 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:19,926 - app - INFO - Getting all products
+2025-12-03 18:05:19,926 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 18:05:20,081 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:20,082 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:05:20,083 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:05:20,084 - app - INFO - Response: GET /products -> 429 (0.003s)
+2025-12-03 18:05:20,209 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:20,211 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:05:20,211 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:05:20,211 - app - INFO - Response: GET /products -> 429 (0.002s)
+2025-12-03 18:05:20,367 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:20,369 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:05:20,369 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:05:20,370 - app - INFO - Response: GET /products -> 429 (0.003s)
+2025-12-03 18:05:20,496 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:20,497 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:05:20,498 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:05:20,498 - app - INFO - Response: GET /products -> 429 (0.002s)
+2025-12-03 18:05:20,866 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:20,868 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:05:20,869 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:05:20,869 - app - INFO - Response: GET /products -> 429 (0.003s)
+2025-12-03 18:05:21,342 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:05:21,343 - slowapi - WARNING - ratelimit 50 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:05:21,344 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:05:21,344 - app - INFO - Response: GET /products -> 429 (0.002s)
+2025-12-03 18:05:25,499 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:25,501 - app - INFO - Creating product: New Product
+2025-12-03 18:05:25,502 - app - INFO - Product created with ID 14
+2025-12-03 18:05:25,502 - app - INFO - Response: POST /products -> 201 (0.003s)
+2025-12-03 18:05:25,633 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:25,635 - app - INFO - Creating product: New Product
+2025-12-03 18:05:25,636 - app - INFO - Product created with ID 15
+2025-12-03 18:05:25,636 - app - INFO - Response: POST /products -> 201 (0.003s)
+2025-12-03 18:05:25,772 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:25,774 - app - INFO - Creating product: New Product
+2025-12-03 18:05:25,774 - app - INFO - Product created with ID 16
+2025-12-03 18:05:25,775 - app - INFO - Response: POST /products -> 201 (0.003s)
+2025-12-03 18:05:25,908 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:25,910 - app - INFO - Creating product: New Product
+2025-12-03 18:05:25,911 - app - INFO - Product created with ID 17
+2025-12-03 18:05:25,912 - app - INFO - Response: POST /products -> 201 (0.003s)
+2025-12-03 18:05:26,039 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:26,041 - app - INFO - Creating product: New Product
+2025-12-03 18:05:26,042 - app - INFO - Product created with ID 18
+2025-12-03 18:05:26,042 - app - INFO - Response: POST /products -> 201 (0.003s)
+2025-12-03 18:05:26,188 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:26,192 - app - INFO - Creating product: New Product
+2025-12-03 18:05:26,193 - app - INFO - Product created with ID 19
+2025-12-03 18:05:26,193 - app - INFO - Response: POST /products -> 201 (0.005s)
+2025-12-03 18:05:26,369 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:26,371 - app - INFO - Creating product: New Product
+2025-12-03 18:05:26,371 - app - INFO - Product created with ID 20
+2025-12-03 18:05:26,372 - app - INFO - Response: POST /products -> 201 (0.003s)
+2025-12-03 18:05:28,374 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:28,376 - app - INFO - Creating product: New Product
+2025-12-03 18:05:28,376 - app - INFO - Product created with ID 21
+2025-12-03 18:05:28,377 - app - INFO - Response: POST /products -> 201 (0.003s)
+2025-12-03 18:05:28,540 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:28,541 - app - INFO - Creating product: New Product
+2025-12-03 18:05:28,542 - app - INFO - Product created with ID 22
+2025-12-03 18:05:28,542 - app - INFO - Response: POST /products -> 201 (0.002s)
+2025-12-03 18:05:28,693 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:28,694 - app - INFO - Creating product: New Product
+2025-12-03 18:05:28,695 - app - INFO - Product created with ID 23
+2025-12-03 18:05:28,695 - app - INFO - Response: POST /products -> 201 (0.002s)
+2025-12-03 18:05:28,839 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:28,841 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:05:28,842 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:05:28,842 - app - INFO - Response: POST /products -> 429 (0.003s)
+2025-12-03 18:05:28,974 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:28,976 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:05:28,977 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:05:28,977 - app - INFO - Response: POST /products -> 429 (0.003s)
+2025-12-03 18:05:29,116 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:29,118 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:05:29,118 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:05:29,119 - app - INFO - Response: POST /products -> 429 (0.003s)
+2025-12-03 18:05:29,240 - app - INFO - Request: POST /products from 127.0.0.1
+2025-12-03 18:05:29,241 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /products
+2025-12-03 18:05:29,242 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:05:29,242 - app - INFO - Response: POST /products -> 429 (0.002s)
+2025-12-03 18:05:51,446 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:05:51,446 - app - INFO - Testing circuit breaker
+2025-12-03 18:05:51,446 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 4
+2025-12-03 18:05:51,446 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:05:51,447 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.001s)
+2025-12-03 18:06:23,072 - __main__ - INFO - Starting Production API Demo
+2025-12-03 18:06:50,147 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 18:06:50,149 - app - INFO - Getting all products
+2025-12-03 18:06:50,150 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 18:07:07,215 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:07,216 - app - INFO - Getting product 1000
+2025-12-03 18:07:07,217 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:07,217 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:07,974 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:07,976 - app - INFO - Getting product 1000
+2025-12-03 18:07:07,976 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:07,977 - app - INFO - Response: GET /products/1000 -> 404 (0.003s)
+2025-12-03 18:07:08,485 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:08,487 - app - INFO - Getting product 1000
+2025-12-03 18:07:08,487 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:08,488 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:08,641 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:08,642 - app - INFO - Getting product 1000
+2025-12-03 18:07:08,643 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:08,643 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:08,814 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:08,816 - app - INFO - Getting product 1000
+2025-12-03 18:07:08,816 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:08,817 - app - INFO - Response: GET /products/1000 -> 404 (0.003s)
+2025-12-03 18:07:09,002 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:09,003 - app - INFO - Getting product 1000
+2025-12-03 18:07:09,004 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:09,004 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:09,237 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:09,239 - app - INFO - Getting product 1000
+2025-12-03 18:07:09,239 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:09,240 - app - INFO - Response: GET /products/1000 -> 404 (0.003s)
+2025-12-03 18:07:09,402 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:09,403 - app - INFO - Getting product 1000
+2025-12-03 18:07:09,403 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:09,404 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:13,936 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:07:13,937 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 18:07:14,090 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:07:14,131 - fastapi - WARNING - email-validator not installed, email fields will be treated as str.
+To install, run: pip install email-validator
+2025-12-03 18:07:14,138 - app - INFO - Response: GET /openapi.json -> 200 (0.049s)
+2025-12-03 18:07:26,466 - app - INFO - Request: GET /products/1 from 127.0.0.1
+2025-12-03 18:07:26,468 - app - INFO - Getting product 1
+2025-12-03 18:07:26,468 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/1
+2025-12-03 18:07:27,162 - app - INFO - Product 1 enriched with external data
+2025-12-03 18:07:27,163 - app - INFO - Response: GET /products/1 -> 200 (0.696s)
+2025-12-03 18:07:29,871 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:29,873 - app - INFO - Getting product 1000
+2025-12-03 18:07:29,873 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:29,874 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:30,246 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:30,248 - app - INFO - Getting product 1000
+2025-12-03 18:07:30,248 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:30,250 - app - INFO - Response: GET /products/1000 -> 404 (0.003s)
+2025-12-03 18:07:30,386 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:30,387 - app - INFO - Getting product 1000
+2025-12-03 18:07:30,387 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:30,388 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:30,530 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:30,532 - app - INFO - Getting product 1000
+2025-12-03 18:07:30,532 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:30,533 - app - INFO - Response: GET /products/1000 -> 404 (0.003s)
+2025-12-03 18:07:30,662 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:30,663 - app - INFO - Getting product 1000
+2025-12-03 18:07:30,664 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:30,664 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:30,796 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:30,798 - app - INFO - Getting product 1000
+2025-12-03 18:07:30,798 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:30,799 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:30,914 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:30,916 - app - INFO - Getting product 1000
+2025-12-03 18:07:30,916 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:30,917 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:31,059 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:31,061 - app - INFO - Getting product 1000
+2025-12-03 18:07:31,061 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:31,062 - app - INFO - Response: GET /products/1000 -> 404 (0.003s)
+2025-12-03 18:07:31,196 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:31,197 - app - INFO - Getting product 1000
+2025-12-03 18:07:31,198 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:31,198 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:31,335 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:31,336 - app - INFO - Getting product 1000
+2025-12-03 18:07:31,337 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:31,338 - app - INFO - Response: GET /products/1000 -> 404 (0.003s)
+2025-12-03 18:07:31,470 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:31,471 - app - INFO - Getting product 1000
+2025-12-03 18:07:31,472 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:31,473 - app - INFO - Response: GET /products/1000 -> 404 (0.003s)
+2025-12-03 18:07:31,600 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:31,602 - app - INFO - Getting product 1000
+2025-12-03 18:07:31,602 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:31,603 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:31,762 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:31,764 - app - INFO - Getting product 1000
+2025-12-03 18:07:31,764 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:31,765 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:31,856 - app - INFO - Request: GET /products/1000 from 127.0.0.1
+2025-12-03 18:07:31,857 - app - INFO - Getting product 1000
+2025-12-03 18:07:31,858 - app - WARNING - Product 1000 not found
+2025-12-03 18:07:31,858 - app - INFO - Response: GET /products/1000 -> 404 (0.002s)
+2025-12-03 18:07:42,049 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:42,050 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:42,050 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 0
+2025-12-03 18:07:42,050 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 18:07:42,050 - app - INFO - Circuit breaker state after failure: CircuitClosedState, fail count: 1
+2025-12-03 18:07:42,051 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:07:45,270 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:45,271 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:45,272 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 1
+2025-12-03 18:07:45,272 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 18:07:45,272 - app - INFO - Circuit breaker state after failure: CircuitClosedState, fail count: 2
+2025-12-03 18:07:45,273 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:07:45,898 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:45,899 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:45,899 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 2
+2025-12-03 18:07:45,899 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:45,900 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:07:46,333 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:46,334 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:46,335 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:46,335 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:46,336 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:07:46,781 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:46,782 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:46,782 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:46,782 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:46,783 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:07:47,232 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:47,232 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:47,233 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:47,233 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:47,234 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:07:47,626 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:47,627 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:47,627 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:47,628 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:47,628 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:07:48,063 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:48,064 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:48,064 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:48,065 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:48,065 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:07:48,709 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:48,710 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:48,711 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:48,711 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:48,712 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:07:49,134 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:49,135 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:49,135 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:49,136 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:49,137 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:07:49,480 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:49,481 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:49,481 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:49,481 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:49,482 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:07:49,667 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:49,668 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:49,668 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:49,669 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:49,670 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:07:49,837 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:49,838 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:49,838 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:49,838 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:49,839 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:07:49,995 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:49,996 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:49,996 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:49,997 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:49,997 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:07:50,176 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:50,176 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:50,177 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:50,177 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:50,178 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:07:50,511 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:50,511 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:50,512 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:50,512 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:50,513 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:07:51,797 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:51,798 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:51,798 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:51,798 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:51,799 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:07:53,053 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:53,054 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:53,054 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:53,055 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:53,055 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:07:53,428 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:53,429 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:53,429 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:53,429 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:53,430 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:07:57,802 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:07:57,803 - app - INFO - Testing circuit breaker
+2025-12-03 18:07:57,803 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:07:57,807 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:07:57,808 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.006s)
+2025-12-03 18:08:00,704 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:08:00,705 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 18:08:00,864 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:08:00,865 - app - INFO - Response: GET /openapi.json -> 200 (0.001s)
+2025-12-03 18:08:06,131 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:08:06,132 - app - INFO - Testing circuit breaker
+2025-12-03 18:08:06,132 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:08:06,132 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:08:06,133 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:08:14,969 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 18:08:14,970 - app - INFO - Rate limit test endpoint called
+2025-12-03 18:08:14,971 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 18:08:16,602 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 18:08:16,604 - app - INFO - Rate limit test endpoint called
+2025-12-03 18:08:16,604 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 18:08:16,835 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 18:08:16,836 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 18:08:16,837 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:08:16,838 - app - INFO - Response: GET /test/rate-limit -> 429 (0.003s)
+2025-12-03 18:08:50,580 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:08:50,581 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 18:08:50,655 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:08:50,656 - app - INFO - Response: GET /openapi.json -> 200 (0.001s)
+2025-12-03 18:08:56,610 - __main__ - INFO - Starting Production API Demo
+2025-12-03 18:09:02,111 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:09:02,113 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 18:09:02,178 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:09:02,179 - app - INFO - Response: GET /openapi.json -> 200 (0.001s)
+2025-12-03 18:09:10,941 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:09:10,942 - app - INFO - Testing circuit breaker
+2025-12-03 18:09:10,942 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:09:10,943 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:09:10,944 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:11:08,370 - __main__ - INFO - Starting Production API Demo
+2025-12-03 18:12:00,628 - app - INFO - Request: GET /test/circu from 127.0.0.1
+2025-12-03 18:12:00,629 - app - INFO - Response: GET /test/circu -> 404 (0.001s)
+2025-12-03 18:12:01,435 - app - INFO - Request: GET /test/circu from 127.0.0.1
+2025-12-03 18:12:01,437 - app - INFO - Response: GET /test/circu -> 404 (0.001s)
+2025-12-03 18:12:02,000 - app - INFO - Request: GET /test/circu from 127.0.0.1
+2025-12-03 18:12:02,000 - app - INFO - Response: GET /test/circu -> 404 (0.001s)
+2025-12-03 18:12:04,527 - app - INFO - Request: GET /test/circu from 127.0.0.1
+2025-12-03 18:12:04,528 - app - INFO - Response: GET /test/circu -> 404 (0.001s)
+2025-12-03 18:12:05,114 - app - INFO - Request: GET /test/circu from 127.0.0.1
+2025-12-03 18:12:05,115 - app - INFO - Response: GET /test/circu -> 404 (0.001s)
+2025-12-03 18:12:43,747 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:12:43,750 - app - INFO - Testing circuit breaker
+2025-12-03 18:12:43,751 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 4
+2025-12-03 18:12:43,752 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:12:43,753 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.006s)
+2025-12-03 18:12:45,026 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:12:45,028 - app - INFO - Testing circuit breaker
+2025-12-03 18:12:45,028 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 18:12:45,029 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:12:45,030 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:12:45,682 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:12:45,684 - app - INFO - Testing circuit breaker
+2025-12-03 18:12:45,684 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 18:12:45,685 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:12:45,686 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.004s)
+2025-12-03 18:12:46,311 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:12:46,313 - app - INFO - Testing circuit breaker
+2025-12-03 18:12:46,313 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 18:12:46,313 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:12:46,314 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:12:47,046 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:12:47,047 - app - INFO - Testing circuit breaker
+2025-12-03 18:12:47,047 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 18:12:47,047 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:12:47,048 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:13:21,952 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:13:21,953 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 18:13:22,120 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:13:22,121 - app - INFO - Response: GET /openapi.json -> 200 (0.001s)
+2025-12-03 18:13:32,989 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:32,990 - app - INFO - Getting product 999
+2025-12-03 18:13:32,991 - app - WARNING - Product 999 not found
+2025-12-03 18:13:32,992 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:13:34,213 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:34,215 - app - INFO - Getting product 999
+2025-12-03 18:13:34,215 - app - WARNING - Product 999 not found
+2025-12-03 18:13:34,216 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:13:34,711 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:34,712 - app - INFO - Getting product 999
+2025-12-03 18:13:34,713 - app - WARNING - Product 999 not found
+2025-12-03 18:13:34,713 - app - INFO - Response: GET /products/999 -> 404 (0.002s)
+2025-12-03 18:13:35,042 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:35,044 - app - INFO - Getting product 999
+2025-12-03 18:13:35,044 - app - WARNING - Product 999 not found
+2025-12-03 18:13:35,045 - app - INFO - Response: GET /products/999 -> 404 (0.002s)
+2025-12-03 18:13:35,188 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:35,189 - app - INFO - Getting product 999
+2025-12-03 18:13:35,189 - app - WARNING - Product 999 not found
+2025-12-03 18:13:35,190 - app - INFO - Response: GET /products/999 -> 404 (0.002s)
+2025-12-03 18:13:35,339 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:35,340 - app - INFO - Getting product 999
+2025-12-03 18:13:35,341 - app - WARNING - Product 999 not found
+2025-12-03 18:13:35,341 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:13:35,475 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:35,476 - app - INFO - Getting product 999
+2025-12-03 18:13:35,476 - app - WARNING - Product 999 not found
+2025-12-03 18:13:35,477 - app - INFO - Response: GET /products/999 -> 404 (0.002s)
+2025-12-03 18:13:35,627 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:35,628 - app - INFO - Getting product 999
+2025-12-03 18:13:35,629 - app - WARNING - Product 999 not found
+2025-12-03 18:13:35,630 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:13:35,770 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:35,772 - app - INFO - Getting product 999
+2025-12-03 18:13:35,772 - app - WARNING - Product 999 not found
+2025-12-03 18:13:35,773 - app - INFO - Response: GET /products/999 -> 404 (0.002s)
+2025-12-03 18:13:35,900 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:35,901 - app - INFO - Getting product 999
+2025-12-03 18:13:35,902 - app - WARNING - Product 999 not found
+2025-12-03 18:13:35,903 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:13:36,035 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:36,037 - app - INFO - Getting product 999
+2025-12-03 18:13:36,037 - app - WARNING - Product 999 not found
+2025-12-03 18:13:36,038 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:13:36,195 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:36,196 - app - INFO - Getting product 999
+2025-12-03 18:13:36,196 - app - WARNING - Product 999 not found
+2025-12-03 18:13:36,197 - app - INFO - Response: GET /products/999 -> 404 (0.002s)
+2025-12-03 18:13:36,462 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:36,464 - app - INFO - Getting product 999
+2025-12-03 18:13:36,464 - app - WARNING - Product 999 not found
+2025-12-03 18:13:36,465 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:13:36,604 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:36,605 - app - INFO - Getting product 999
+2025-12-03 18:13:36,606 - app - WARNING - Product 999 not found
+2025-12-03 18:13:36,606 - app - INFO - Response: GET /products/999 -> 404 (0.002s)
+2025-12-03 18:13:36,856 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:36,858 - app - INFO - Getting product 999
+2025-12-03 18:13:36,858 - app - WARNING - Product 999 not found
+2025-12-03 18:13:36,859 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:13:37,023 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:37,025 - app - INFO - Getting product 999
+2025-12-03 18:13:37,026 - app - WARNING - Product 999 not found
+2025-12-03 18:13:37,027 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:13:37,158 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:37,159 - app - INFO - Getting product 999
+2025-12-03 18:13:37,159 - app - WARNING - Product 999 not found
+2025-12-03 18:13:37,160 - app - INFO - Response: GET /products/999 -> 404 (0.002s)
+2025-12-03 18:13:37,291 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:37,292 - app - INFO - Getting product 999
+2025-12-03 18:13:37,293 - app - WARNING - Product 999 not found
+2025-12-03 18:13:37,293 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:13:37,429 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:37,431 - app - INFO - Getting product 999
+2025-12-03 18:13:37,432 - app - WARNING - Product 999 not found
+2025-12-03 18:13:37,432 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:13:37,593 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:37,595 - app - INFO - Getting product 999
+2025-12-03 18:13:37,595 - app - WARNING - Product 999 not found
+2025-12-03 18:13:37,596 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:13:37,940 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:13:37,941 - app - INFO - Getting product 999
+2025-12-03 18:13:37,942 - app - WARNING - Product 999 not found
+2025-12-03 18:13:37,942 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:15:26,171 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:15:26,172 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 18:15:26,355 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:15:26,357 - app - INFO - Response: GET /openapi.json -> 200 (0.001s)
+2025-12-03 18:15:32,959 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:15:32,961 - app - INFO - Testing circuit breaker
+2025-12-03 18:15:32,962 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 5
+2025-12-03 18:15:32,963 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:15:32,965 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.006s)
+2025-12-03 18:15:35,931 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:15:35,932 - app - INFO - Testing circuit breaker
+2025-12-03 18:15:35,932 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 6
+2025-12-03 18:15:35,933 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:15:35,933 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:15:36,501 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:15:36,502 - app - INFO - Testing circuit breaker
+2025-12-03 18:15:36,503 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 6
+2025-12-03 18:15:36,504 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:15:36,504 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:15:36,674 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:15:36,675 - app - INFO - Testing circuit breaker
+2025-12-03 18:15:36,675 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 6
+2025-12-03 18:15:36,675 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:15:36,677 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:15:37,619 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:15:37,621 - app - INFO - Testing circuit breaker
+2025-12-03 18:15:37,621 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 6
+2025-12-03 18:15:37,622 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:15:37,623 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.004s)
+2025-12-03 18:15:37,800 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:15:37,801 - app - INFO - Testing circuit breaker
+2025-12-03 18:15:37,802 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 6
+2025-12-03 18:15:37,802 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:15:37,803 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:17:07,310 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:17:07,311 - app - INFO - Testing circuit breaker
+2025-12-03 18:17:07,311 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 6
+2025-12-03 18:17:07,312 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:17:07,313 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:17:52,536 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 18:17:52,538 - app - INFO - Rate limit test endpoint called
+2025-12-03 18:17:52,539 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 18:17:53,143 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 18:17:53,144 - app - INFO - Rate limit test endpoint called
+2025-12-03 18:17:53,145 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 18:17:53,835 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 18:17:53,836 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 18:17:53,836 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 18:17:53,837 - app - INFO - Response: GET /test/rate-limit -> 429 (0.003s)
+2025-12-03 18:18:16,767 - __main__ - INFO - Starting Production API Demo
+2025-12-03 18:18:19,098 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:18:19,100 - app - INFO - Response: GET /docs -> 200 (0.002s)
+2025-12-03 18:18:19,183 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:18:19,224 - fastapi - WARNING - email-validator not installed, email fields will be treated as str.
+To install, run: pip install email-validator
+2025-12-03 18:18:19,233 - app - INFO - Response: GET /openapi.json -> 200 (0.050s)
+2025-12-03 18:18:26,102 - app - INFO - Request: POST /test/circuit-breaker/reset from 127.0.0.1
+2025-12-03 18:18:26,102 - app - INFO - Resetting circuit breaker manually
+2025-12-03 18:18:26,103 - app - ERROR - Unhandled exception: property 'fail_counter' of 'CircuitBreaker' object has no setter
+2025-12-03 18:18:40,057 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:18:40,058 - app - INFO - Testing circuit breaker
+2025-12-03 18:18:40,058 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 0
+2025-12-03 18:18:40,059 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 18:18:40,059 - app - INFO - Circuit breaker state after failure: CircuitClosedState, fail count: 1
+2025-12-03 18:18:40,060 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:18:41,163 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:18:41,164 - app - INFO - Testing circuit breaker
+2025-12-03 18:18:41,165 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 1
+2025-12-03 18:18:41,165 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 18:18:41,165 - app - INFO - Circuit breaker state after failure: CircuitClosedState, fail count: 2
+2025-12-03 18:18:41,166 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:18:43,661 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:18:43,662 - app - INFO - Testing circuit breaker
+2025-12-03 18:18:43,662 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 2
+2025-12-03 18:18:43,662 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:18:43,663 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:18:44,076 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:18:44,077 - app - INFO - Testing circuit breaker
+2025-12-03 18:18:44,077 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:18:44,078 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:18:44,078 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:18:44,477 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:18:44,477 - app - INFO - Testing circuit breaker
+2025-12-03 18:18:44,478 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:18:44,478 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:18:44,479 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:18:44,641 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:18:44,642 - app - INFO - Testing circuit breaker
+2025-12-03 18:18:44,642 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:18:44,643 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:18:44,643 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:18:44,885 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:18:44,886 - app - INFO - Testing circuit breaker
+2025-12-03 18:18:44,886 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:18:44,887 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:18:44,887 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:18:50,968 - app - INFO - Request: POST /test/circuit-breaker/reset from 127.0.0.1
+2025-12-03 18:18:50,970 - app - INFO - Resetting circuit breaker manually
+2025-12-03 18:18:50,971 - app - ERROR - Unhandled exception: property 'fail_counter' of 'CircuitBreaker' object has no setter
+2025-12-03 18:18:57,795 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:18:57,796 - app - INFO - Testing circuit breaker
+2025-12-03 18:18:57,797 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 0
+2025-12-03 18:18:57,797 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 18:18:57,797 - app - INFO - Circuit breaker state after failure: CircuitClosedState, fail count: 1
+2025-12-03 18:18:57,798 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:19:00,044 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:19:00,044 - app - INFO - Testing circuit breaker
+2025-12-03 18:19:00,045 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 1
+2025-12-03 18:19:00,045 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 18:19:00,045 - app - INFO - Circuit breaker state after failure: CircuitClosedState, fail count: 2
+2025-12-03 18:19:00,046 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:19:00,293 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:19:00,293 - app - INFO - Testing circuit breaker
+2025-12-03 18:19:00,293 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 2
+2025-12-03 18:19:00,294 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:19:00,294 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:19:00,577 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:19:00,578 - app - INFO - Testing circuit breaker
+2025-12-03 18:19:00,579 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:19:00,580 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:19:00,581 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.005s)
+2025-12-03 18:25:17,343 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:25:17,347 - app - INFO - Getting product 999
+2025-12-03 18:25:17,347 - app - WARNING - Product 999 not found
+2025-12-03 18:25:17,348 - app - INFO - Response: GET /products/999 -> 404 (0.005s)
+2025-12-03 18:25:17,981 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:25:17,983 - app - INFO - Getting product 999
+2025-12-03 18:25:17,984 - app - WARNING - Product 999 not found
+2025-12-03 18:25:17,985 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:25:19,769 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:25:19,770 - app - INFO - Getting product 999
+2025-12-03 18:25:19,771 - app - WARNING - Product 999 not found
+2025-12-03 18:25:19,771 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:25:20,110 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:25:20,111 - app - INFO - Getting product 999
+2025-12-03 18:25:20,111 - app - WARNING - Product 999 not found
+2025-12-03 18:25:20,112 - app - INFO - Response: GET /products/999 -> 404 (0.002s)
+2025-12-03 18:25:20,300 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:25:20,301 - app - INFO - Getting product 999
+2025-12-03 18:25:20,302 - app - WARNING - Product 999 not found
+2025-12-03 18:25:20,302 - app - INFO - Response: GET /products/999 -> 404 (0.002s)
+2025-12-03 18:25:20,460 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:25:20,461 - app - INFO - Getting product 999
+2025-12-03 18:25:20,462 - app - WARNING - Product 999 not found
+2025-12-03 18:25:20,463 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:25:20,611 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:25:20,613 - app - INFO - Getting product 999
+2025-12-03 18:25:20,613 - app - WARNING - Product 999 not found
+2025-12-03 18:25:20,614 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:25:20,760 - app - INFO - Request: GET /products/999 from 127.0.0.1
+2025-12-03 18:25:20,761 - app - INFO - Getting product 999
+2025-12-03 18:25:20,762 - app - WARNING - Product 999 not found
+2025-12-03 18:25:20,762 - app - INFO - Response: GET /products/999 -> 404 (0.003s)
+2025-12-03 18:30:27,376 - __main__ - INFO - Starting Production API Demo
+2025-12-03 18:30:30,199 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:30:30,202 - app - INFO - Response: GET /docs -> 200 (0.002s)
+2025-12-03 18:30:30,387 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:30:30,420 - fastapi - WARNING - email-validator not installed, email fields will be treated as str.
+To install, run: pip install email-validator
+2025-12-03 18:30:30,428 - app - INFO - Response: GET /openapi.json -> 200 (0.041s)
+2025-12-03 18:33:30,071 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 18:33:30,074 - app - INFO - Response: GET /docs -> 200 (0.002s)
+2025-12-03 18:33:30,272 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 18:33:30,311 - fastapi - WARNING - email-validator not installed, email fields will be treated as str.
+To install, run: pip install email-validator
+2025-12-03 18:33:30,321 - app - INFO - Response: GET /openapi.json -> 200 (0.049s)
+2025-12-03 18:33:33,888 - app - INFO - Request: GET /products/1 from 127.0.0.1
+2025-12-03 18:33:33,889 - app - INFO - Getting product 1
+2025-12-03 18:33:33,890 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/1
+2025-12-03 18:33:34,590 - app - INFO - Product 1 enriched with external data
+2025-12-03 18:33:34,593 - app - INFO - Response: GET /products/1 -> 200 (0.705s)
+2025-12-03 18:33:35,647 - app - INFO - Request: GET /products/1 from 127.0.0.1
+2025-12-03 18:33:35,650 - app - INFO - Getting product 1
+2025-12-03 18:33:35,650 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/1
+2025-12-03 18:33:36,338 - app - INFO - Product 1 enriched with external data
+2025-12-03 18:33:36,339 - app - INFO - Response: GET /products/1 -> 200 (0.692s)
+2025-12-03 18:34:39,061 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:34:39,062 - app - INFO - Testing circuit breaker
+2025-12-03 18:34:39,062 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 0
+2025-12-03 18:34:39,063 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 18:34:39,063 - app - INFO - Circuit breaker state after failure: CircuitClosedState, fail count: 1
+2025-12-03 18:34:39,064 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:34:39,954 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:34:39,955 - app - INFO - Testing circuit breaker
+2025-12-03 18:34:39,955 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 1
+2025-12-03 18:34:39,955 - app - ERROR - Circuit breaker test failed: Simulated circuit breaker failure
+2025-12-03 18:34:39,956 - app - INFO - Circuit breaker state after failure: CircuitClosedState, fail count: 2
+2025-12-03 18:34:39,956 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:34:41,022 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:34:41,023 - app - INFO - Testing circuit breaker
+2025-12-03 18:34:41,024 - app - INFO - Circuit breaker state before: CircuitClosedState, fail count: 2
+2025-12-03 18:34:41,024 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:34:41,025 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:34:41,579 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:34:41,580 - app - INFO - Testing circuit breaker
+2025-12-03 18:34:41,581 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:34:41,581 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:34:41,582 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.003s)
+2025-12-03 18:34:42,263 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:34:42,263 - app - INFO - Testing circuit breaker
+2025-12-03 18:34:42,264 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:34:42,264 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:34:42,265 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)
+2025-12-03 18:34:42,757 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 18:34:42,757 - app - INFO - Testing circuit breaker
+2025-12-03 18:34:42,758 - app - INFO - Circuit breaker state before: CircuitOpenState, fail count: 3
+2025-12-03 18:34:42,758 - app - WARNING - Circuit breaker is open during test
+2025-12-03 18:34:42,759 - app - INFO - Response: GET /test/circuit-breaker -> 200 (0.002s)

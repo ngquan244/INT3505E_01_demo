@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  # Main API
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=false
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - redis
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+  # Redis for rate limiting
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  # Prometheus for metrics
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--web.enable-lifecycle'
+    restart: unless-stopped

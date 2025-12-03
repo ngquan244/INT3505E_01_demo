@@ -1,0 +1,204 @@
+2025-12-03 17:17:34,043 - __main__ - INFO - Starting Production API Demo
+2025-12-03 17:18:04,420 - __main__ - INFO - Starting Production API Demo
+2025-12-03 17:18:36,616 - __main__ - INFO - Starting Production API Demo
+2025-12-03 17:19:34,243 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 17:19:34,245 - app - INFO - Response: GET / -> 200 (0.002s)
+2025-12-03 17:19:49,076 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 17:19:49,077 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 17:19:58,537 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:19:58,537 - app - INFO - Health check performed
+2025-12-03 17:19:58,538 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:20:05,993 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 17:20:05,994 - app - INFO - Response: GET / -> 200 (0.001s)
+2025-12-03 17:20:11,364 - app - INFO - Request: GET /metrics from 127.0.0.1
+2025-12-03 17:20:11,365 - app - INFO - Metrics requested
+2025-12-03 17:20:11,367 - app - INFO - Response: GET /metrics -> 200 (0.002s)
+2025-12-03 17:20:37,444 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:20:37,444 - app - INFO - Health check performed
+2025-12-03 17:20:37,445 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:20:39,505 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 17:20:39,506 - app - INFO - Response: GET / -> 200 (0.001s)
+2025-12-03 17:20:41,552 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:20:41,553 - app - INFO - Health check performed
+2025-12-03 17:20:41,553 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:20:43,590 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:20:43,591 - app - INFO - Getting all products
+2025-12-03 17:20:43,592 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:20:45,621 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:20:45,623 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:20:45,623 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:20:48,670 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:20:48,671 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:20:48,672 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:20:51,717 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:20:51,718 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:20:51,719 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:20:54,764 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:20:54,765 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:20:54,766 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:20:57,827 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:20:57,830 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:20:57,832 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:21:00,871 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:21:00,872 - app - INFO - Testing circuit breaker
+2025-12-03 17:21:01,427 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:21:01,648 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:21:01,651 - app - ERROR - External API call failed: Client error '404 Not Found' for url 'https://jsonplaceholder.typicode.com/posts/999'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-12-03 17:22:19,473 - app - INFO - Request: GET /metrics from 127.0.0.1
+2025-12-03 17:22:19,475 - app - INFO - Metrics requested
+2025-12-03 17:22:19,476 - app - INFO - Response: GET /metrics -> 200 (0.003s)
+2025-12-03 17:22:24,062 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 17:22:24,063 - app - INFO - Response: GET / -> 200 (0.001s)
+2025-12-03 17:24:22,541 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:24:22,542 - app - INFO - Health check performed
+2025-12-03 17:24:22,543 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:25:40,589 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:25:40,590 - app - INFO - Getting all products
+2025-12-03 17:25:40,591 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:34:39,576 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:34:39,578 - app - INFO - Getting all products
+2025-12-03 17:34:39,578 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:35:07,598 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:35:07,599 - app - INFO - Getting all products
+2025-12-03 17:35:07,600 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:35:43,594 - app - INFO - Request: GET /docs from 127.0.0.1
+2025-12-03 17:35:43,595 - app - INFO - Response: GET /docs -> 200 (0.001s)
+2025-12-03 17:35:44,243 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 17:35:44,289 - fastapi - WARNING - email-validator not installed, email fields will be treated as str.
+To install, run: pip install email-validator
+2025-12-03 17:35:44,297 - app - INFO - Response: GET /openapi.json -> 200 (0.054s)
+2025-12-03 17:36:01,808 - app - INFO - Request: GET /redoc from 127.0.0.1
+2025-12-03 17:36:01,809 - app - INFO - Response: GET /redoc -> 200 (0.001s)
+2025-12-03 17:36:02,008 - app - INFO - Request: GET /openapi.json from 127.0.0.1
+2025-12-03 17:36:02,009 - app - INFO - Response: GET /openapi.json -> 200 (0.001s)
+2025-12-03 17:36:16,862 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:36:16,862 - app - INFO - Health check performed
+2025-12-03 17:36:16,863 - app - INFO - Response: GET /health -> 200 (0.002s)
+2025-12-03 17:36:16,934 - app - INFO - Request: GET /favicon.ico from 127.0.0.1
+2025-12-03 17:36:16,935 - app - INFO - Response: GET /favicon.ico -> 404 (0.001s)
+2025-12-03 17:36:25,061 - app - INFO - Request: GET /metrics from 127.0.0.1
+2025-12-03 17:36:25,062 - app - INFO - Metrics requested
+2025-12-03 17:36:25,065 - app - INFO - Response: GET /metrics -> 200 (0.004s)
+2025-12-03 17:37:44,159 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:37:44,160 - app - INFO - Health check performed
+2025-12-03 17:37:44,161 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:37:46,195 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 17:37:46,196 - app - INFO - Response: GET / -> 200 (0.001s)
+2025-12-03 17:37:48,223 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:37:48,224 - app - INFO - Health check performed
+2025-12-03 17:37:48,224 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:37:50,272 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:37:50,273 - app - INFO - Getting all products
+2025-12-03 17:37:50,274 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:37:52,311 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:37:52,312 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:37:52,313 - app - INFO - Response: GET /test/rate-limit -> 200 (0.001s)
+2025-12-03 17:37:55,363 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:37:55,364 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:37:55,364 - app - INFO - Response: GET /test/rate-limit -> 200 (0.001s)
+2025-12-03 17:37:58,421 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:37:58,422 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:37:58,423 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:37:58,423 - app - ERROR - Unhandled exception: 'HTTPException' object is not callable
+2025-12-03 17:38:01,465 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:38:01,466 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:38:01,466 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:38:01,467 - app - ERROR - Unhandled exception: 'HTTPException' object is not callable
+2025-12-03 17:38:04,509 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:38:04,509 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:38:04,510 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:38:04,510 - app - ERROR - Unhandled exception: 'HTTPException' object is not callable
+2025-12-03 17:38:07,550 - app - INFO - Request: GET /test/circuit-breaker from 127.0.0.1
+2025-12-03 17:38:07,551 - app - INFO - Testing circuit breaker
+2025-12-03 17:38:08,082 - app - INFO - Calling external API: https://jsonplaceholder.typicode.com/posts/999
+2025-12-03 17:38:08,286 - httpx - INFO - HTTP Request: GET https://jsonplaceholder.typicode.com/posts/999 "HTTP/1.1 404 Not Found"
+2025-12-03 17:38:08,289 - app - ERROR - External API call failed: Client error '404 Not Found' for url 'https://jsonplaceholder.typicode.com/posts/999'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-12-03 17:38:08,290 - app - ERROR - Circuit breaker test failed: 'str' object has no attribute 'name'
+2025-12-03 17:38:08,291 - app - ERROR - Unhandled exception: 'str' object has no attribute 'name'
+2025-12-03 17:38:10,630 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:10,632 - app - INFO - Getting all products
+2025-12-03 17:38:10,632 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:38:11,903 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:11,905 - app - INFO - Getting all products
+2025-12-03 17:38:11,906 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:38:12,865 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:12,866 - app - INFO - Getting all products
+2025-12-03 17:38:12,867 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:38:19,112 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:19,114 - app - INFO - Getting all products
+2025-12-03 17:38:19,115 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:38:19,835 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:19,836 - app - INFO - Getting all products
+2025-12-03 17:38:19,836 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:38:20,417 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:20,418 - app - INFO - Getting all products
+2025-12-03 17:38:20,419 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:38:20,972 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:20,975 - app - INFO - Getting all products
+2025-12-03 17:38:20,976 - app - INFO - Response: GET /products -> 200 (0.004s)
+2025-12-03 17:38:21,485 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:21,487 - app - INFO - Getting all products
+2025-12-03 17:38:21,488 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:38:21,969 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:21,971 - app - INFO - Getting all products
+2025-12-03 17:38:21,972 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:38:22,513 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:22,515 - app - INFO - Getting all products
+2025-12-03 17:38:22,516 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:38:23,032 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:23,034 - app - INFO - Getting all products
+2025-12-03 17:38:23,035 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:38:23,572 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:23,574 - app - INFO - Getting all products
+2025-12-03 17:38:23,574 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:38:24,039 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:24,041 - app - INFO - Getting all products
+2025-12-03 17:38:24,042 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:38:24,454 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:24,455 - app - INFO - Getting all products
+2025-12-03 17:38:24,456 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:38:25,022 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:25,024 - app - INFO - Getting all products
+2025-12-03 17:38:25,024 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:38:25,495 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:25,497 - app - INFO - Getting all products
+2025-12-03 17:38:25,498 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:38:25,961 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:25,962 - app - INFO - Getting all products
+2025-12-03 17:38:25,963 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:38:26,503 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:26,504 - app - INFO - Getting all products
+2025-12-03 17:38:26,505 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:38:26,938 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:26,940 - app - INFO - Getting all products
+2025-12-03 17:38:26,941 - app - INFO - Response: GET /products -> 200 (0.002s)
+2025-12-03 17:38:27,542 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:38:27,544 - app - INFO - Getting all products
+2025-12-03 17:38:27,545 - app - INFO - Response: GET /products -> 200 (0.003s)
+2025-12-03 17:39:16,407 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:39:16,408 - app - INFO - Health check performed
+2025-12-03 17:39:16,408 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:39:18,436 - app - INFO - Request: GET / from 127.0.0.1
+2025-12-03 17:39:18,436 - app - INFO - Response: GET / -> 200 (0.001s)
+2025-12-03 17:39:20,476 - app - INFO - Request: GET /health from 127.0.0.1
+2025-12-03 17:39:20,477 - app - INFO - Health check performed
+2025-12-03 17:39:20,477 - app - INFO - Response: GET /health -> 200 (0.001s)
+2025-12-03 17:39:22,517 - app - INFO - Request: GET /products from 127.0.0.1
+2025-12-03 17:39:22,518 - app - INFO - Getting all products
+2025-12-03 17:39:22,519 - app - INFO - Response: GET /products -> 200 (0.001s)
+2025-12-03 17:39:24,575 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:39:24,576 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:39:24,576 - app - INFO - Response: GET /test/rate-limit -> 200 (0.002s)
+2025-12-03 17:39:27,621 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:39:27,622 - app - INFO - Rate limit test endpoint called
+2025-12-03 17:39:27,622 - app - INFO - Response: GET /test/rate-limit -> 200 (0.001s)
+2025-12-03 17:39:30,652 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:39:30,653 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:39:30,654 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:39:30,654 - app - ERROR - Unhandled exception: 'HTTPException' object is not callable
+2025-12-03 17:39:33,691 - app - INFO - Request: GET /test/rate-limit from 127.0.0.1
+2025-12-03 17:39:33,692 - slowapi - WARNING - ratelimit 2 per 1 minute (127.0.0.1) exceeded at endpoint: /test/rate-limit
+2025-12-03 17:39:33,692 - app - WARNING - Rate limit exceeded for 127.0.0.1
+2025-12-03 17:39:33,692 - app - ERROR - Unhandled exception: 'HTTPException' object is not callable
