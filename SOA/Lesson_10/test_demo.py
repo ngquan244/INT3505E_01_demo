@@ -12,15 +12,13 @@ def test_basic_endpoints():
     print(f"Status: {response.status_code}")
     print(f"Response: {response.json()}")
     print()
-    
-    # Test health endpoint  
+     
     print("2. Testing health endpoint...")
     response = requests.get(f"{BASE_URL}/health")
     print(f"Status: {response.status_code}")
     print(f"Response: {response.json()}")
     print()
     
-    # Test products endpoint
     print("3. Testing products endpoint...")
     response = requests.get(f"{BASE_URL}/products")
     print(f"Status: {response.status_code}")

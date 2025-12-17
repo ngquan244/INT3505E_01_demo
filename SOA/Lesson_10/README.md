@@ -1,41 +1,55 @@
-# Production API Demo Lesson10
 
-##  Tính năng chính
+# Production API Demo Lesson 10
+
+##  Tính Năng Chính
 
 ###  Production Features
-- **Monitoring**: Prometheus metrics collection  
-- **Rate Limiting**: Redis-based với fallback memory
-- **Circuit Breaker**: Bảo vệ external API calls
-- **Structured Logging**: File + console logging
-- **Health Checks**: Endpoint cho load balancers
-- **Docker Deployment**: Container-ready
-- **API Documentation**: Enhanced Swagger UI
 
-### Security & Reliability
-- **Rate Limiting**: Khác nhau cho từng endpoint
-  - GET `/products`: 50 req/min
-  - GET `/products/{id}`: 100 req/min
-  - POST `/products`: 10 req/min
-  - PUT `/products/{id}`: 20 req/min
-  - DELETE `/products/{id}`: 5 req/min
-  - TEST `/test/rate-limit`: 5 req/min
-- **Circuit Breaker**: Tự động ngắt kết nối khi external service fail
+| Tính năng              | Mô tả                                    |
+|------------------------|------------------------------------------|
+| **Monitoring**         | Thu thập metrics Prometheus              |
+| **Rate Limiting**      | Redis-based, fallback bộ nhớ             |
+| **Circuit Breaker**    | Bảo vệ các external API calls            |
+| **Structured Logging** | Ghi log ra file & console                |
+| **Health Checks**      | Endpoint kiểm tra sức khỏe cho LB        |
+| **Docker Deployment**  | Sẵn sàng chạy container                  |
+| **API Documentation**  | Swagger UI nâng cao                      |
+
+###  Security & Reliability
+
+#### Rate Limiting cho từng endpoint
+
+| Endpoint                  | Giới hạn (req/min) |
+|---------------------------|--------------------|
+| GET `/products`           | 50                 |
+| GET `/products/{id}`      | 100                |
+| POST `/products`          | 10                 |
+| PUT `/products/{id}`      | 20                 |
+| DELETE `/products/{id}`   | 5                  |
+| TEST `/test/rate-limit`   | 5                  |
+
+- **Circuit Breaker**: Tự động ngắt kết nối khi external service lỗi
 - **Graceful Degradation**: API vẫn hoạt động khi external service down
+
+---
 
 ##  Quick Start
 
-### 1. Cài đặt Dependencies
+### 1️. Cài đặt Dependencies
+
 ```powershell
 cd E:\WorkSpace\SOA_Practice\SOA\Lesson_10
 pip install -r requirements.txt
 ```
 
-### 2. Chạy với Docker (Recommended)
+### 2️. Chạy với Docker (Khuyến nghị)
+
 ```powershell
 docker-compose up -d
 ```
 
-### 3. Hoặc chạy trực tiếp
+### 3️. Hoặc chạy trực tiếp
+
 ```powershell
 python app.py
 ```
